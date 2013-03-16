@@ -1,0 +1,7 @@
+class ApplicationController < ActionController::Base
+  protect_from_forgery
+
+I18n.default_locale='espanish'
+ 
+ 
+end

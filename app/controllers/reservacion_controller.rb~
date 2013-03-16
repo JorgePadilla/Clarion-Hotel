@@ -1,0 +1,9 @@
+class ReservacionController < ApplicationController
+  def index
+    @form = Form.new
+    
+  end
+    
+    class Form
+    end
+end

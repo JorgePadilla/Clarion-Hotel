@@ -1,0 +1,107 @@
+/**
+	PlusSlider Version 1.1
+	By Jamy Golden
+	http://css-plus.com
+**/
+
+/* PlusSlider Styling */
+#slider{height: 500px; width: 100%; position: relative; left: 0; }
+.plusSlider{
+	height: 500px;
+	margin: 0;
+	overflow: hidden;
+	width:  100%;
+	position: relative;
+	left:50%;
+	z-index:1;
+}
+.plusSlider .child{float: left;}
+/* Controls */
+.plusSlider-controls-wrapper {
+	height: 35px;
+	width: 800px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	z-index: 3;
+	margin-left:-470px;
+}
+.plusSlider-controls{
+	padding: 5px 0;
+	width:200px !important;
+}
+/*.plusSlider-controls a{
+	background: url(../images/plus-sprite.png) repeat-x center 0;
+	display: block;
+	float: left;
+	height: 9px;
+	margin: 0 8px 0 0;
+	width: 100px;
+	text-indent: -9999px; 
+	font-size: 0;
+	outline:0 none;
+	
+}
+.plusSlider-controls a.current{
+	background-position: 0 -9px;
+}*/
+.plusSlider-controls a{
+	display: block;
+	float: left;
+	height: 10px;
+	margin: 0 8px 0 0;
+	width: 10px;
+	background:rgba(0, 0, 0, 0.4);
+	text-indent: -9999px; 
+	font-size: 0;
+	outline:0 none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.plusSlider-controls a.current{
+	background:rgba(0, 0, 0, 0.7);
+	width:14px;
+	height:14px;
+	margin:-2px 8px 0 -2px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+.plusSlider .slide-arrows {}
+#slideshow a.arrow{
+	background: url(../images/plus-sprite.png) no-repeat;;
+	display: block;
+	height: 50px;
+	opacity: 0;
+	width: 50px;
+	position: absolute;
+	top: 225px;
+	z-index: 3;
+	text-indent: -9999px;
+	outline:0 none;
+	/* Fade in/out .arrows on hover */
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 0.2s;
+	-moz-transition-timing-function: ease-in;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 0.2s;
+	-webkit-transition-timing-function: ease-in;
+	transition-property: opacity;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in;
+}
+#slideshow:hover  a.arrow{opacity: 1;}
+#slideshow a.prev{background-position: 0 -68px; left: 15px;}
+#slideshow a.prev:hover{background-position: 0 -18px; }
+#slideshow a.next{background-position: -50px -68px; right: 15px;}
+#slideshow a.next:hover{background-position: -50px -18px;}
+
+/* PlusFader Specific */
+.fader .child{display: none; position: absolute; left: 0; top: 0;}
+.fader .plusSlider-controls{position: relative; z-index: 200;}
+
+/* no-javascript fallback */
+#slider > *, #slider2 > *{display: none;}
+#slider > *:first-child, #slider2 > *:first-child{display: block;}
+/* end no-javascript fallback */
