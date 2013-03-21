@@ -1,4 +1,6 @@
 Clarion::Application.routes.draw do
+  get "galeria/index"
+
   resources :ingles
 
   #get "reservacion/index"
@@ -11,6 +13,7 @@ Clarion::Application.routes.draw do
   get "habitaciones/index"
   match "ingles" => "ingles#index"
   get "home/index"
+  match "galeria" => "galeria#index"
  
   
   # The priority is based upon order of creation:

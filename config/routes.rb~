@@ -1,7 +1,9 @@
 Clarion::Application.routes.draw do
+  get "galeria/index"
+
   resources :ingles
 
-  get "reservacion/index"
+  #get "reservacion/index"
 
  # get "instalacion/index"
 

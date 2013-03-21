@@ -538,7 +538,7 @@ html">Honduras</a></li>
                     <li><%= link_to t('instalaciones_clarion'), instalaciones_path %></li>
                     <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
                     </li>
-                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><%= link_to t('galeria_clarion'), galerias_path %></li>
 
                      <% if t('idioma_clarion') == "English" %>
                          <li><%= link_to t('idioma_clarion'), root_path(:locale => "en") %></li>
@@ -723,6 +723,12 @@ ta
       <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
            <td>  <h4 width= "30"> Plantilla hecha por Francisco Calix y Jorge Padilla </h4> </td>
    <td>
+
+         
+
+         
+        </td>
+ <td>
 
          
 

@@ -360,7 +360,7 @@ html">Honduras</a></li>
                     <li><%= link_to t('instalaciones_clarion'), instalaciones_path %></li>
                  <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
                     </li>
-                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><%= link_to t('galeria_clarion'), galeria_path %></li>
 
                      <% if t('idioma_clarion') == "English" %>
                          <li><%= link_to t('idioma_clarion'), reservaciones_path(:locale => "en") %></li>
