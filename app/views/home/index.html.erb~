@@ -538,7 +538,8 @@ html">Honduras</a></li>
                     <li><%= link_to t('instalaciones_clarion'), instalaciones_path %></li>
                     <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
                     </li>
-                    <li><a href="galeria.html">Galeria</a></li>
+
+                    <li><%= link_to t('galeria_clarion'), galerias_path %></li>
 
                      <% if t('idioma_clarion') == "English" %>
                          <li><%= link_to t('idioma_clarion'), root_path(:locale => "en") %></li>
@@ -728,6 +729,15 @@ ta
 
          
         </td>
+<<<<<<< HEAD
+=======
+ <td>
+
+         
+
+         
+        </td>
+>>>>>>> 730b9c9c188d96e8f9e5d4c80335a597e6894ddd
            <td WIDTH=75><!-- Facebook Badge START --><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Hotel Clarion San Pedro Sula"></a><br/><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" title="Hotel Clarion San Pedro Sula"><img src="/images/facebook_64.png" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" </a><!-- Facebook Badge END -->   </td>
 
         <tr>

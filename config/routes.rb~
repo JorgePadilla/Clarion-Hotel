@@ -1,4 +1,9 @@
 Clarion::Application.routes.draw do
+<<<<<<< HEAD
+=======
+  get "galeria/index"
+
+>>>>>>> 730b9c9c188d96e8f9e5d4c80335a597e6894ddd
   resources :ingles
 
   #get "reservacion/index"
@@ -8,9 +13,12 @@ Clarion::Application.routes.draw do
   resources :habitaciones
   match "instalaciones" => "instalacion#index"
   match "reservaciones"  => "reservacion#index"
+<<<<<<< HEAD
   match "reservaciones_show"  => "reservacion#show"
   resources :reservacion, :only => [:show]
   
+=======
+>>>>>>> 730b9c9c188d96e8f9e5d4c80335a597e6894ddd
   get "habitaciones/index"
   match "ingles" => "ingles#index"
   get "home/index"
