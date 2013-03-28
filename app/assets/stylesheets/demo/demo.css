@@ -1,0 +1,13 @@
+/*
+this stylesheet is only for demo purposes
+*/
+
+#demopanel {left: 0;position: absolute;top: 50px;z-index: 100;}
+#panel {position:relative; left:-100px;}
+.panel_button { position: relative; left:0px; width:48px; cursor: pointer;}
+#panel {position: absolute;top:-28px;left:-200px;overflow: hidden;background:#000;-moz-border-radius: 0px 4px 4px 0px;-webkit-border-radius: 0px 4px 4px 0px;border-radius: 0px 4px 4px 0px;padding:15px 12px 15px 13px;width:125px;font-size:10px;color:#999;}
+#panel h3 {border-bottom:1px solid #343434; color:#9c9c9c; padding-bottom:4px; margin-bottom:8px;}
+#panel .heading {font-weight:bold; font-family:Arial, sans-serif; margin-top:10px;}
+#panel .selector ul {list-style: none outside none;margin: 0;padding: 0;}
+#panel .selector  ul li {border: 1px solid #888888;cursor: pointer;float: left;height: 15px;margin: 3px;width: 15px;background-color:#fff;}
+#font_list {font-size:12px; max-width:120px; }

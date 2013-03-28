@@ -1,0 +1,11 @@
+
+
+
+<%= render :partial => 'form' %>
+
+<%= simple_form_for @foto do |f| %>
+ <%= f.file_format :photo %>
+
+<% end %>
+
+<p><%= link_to "Back to promociones", promociones_path %></p>

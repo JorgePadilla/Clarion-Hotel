@@ -1,0 +1,374 @@
+<!DOCTYPE html> 
+ 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="robots" content="index, follow" /> 
+<meta name="keywords" content="" /> 
+<meta name="description" content="" /> 
+<title>HOTEL QUINTA REAL, LA CEIBA</title> 
+  
+<!-- CSS Start //--> 
+<link rel="shortcut icon" href="images/favicon.png" /> 
+<link href="style.css" rel="stylesheet" type="text/css" /> 
+<link href="css/colorbox.css" rel="stylesheet" type="text/css" /> 
+<link href="css/plusslider.css" rel="stylesheet" />
+<link href="css/superfish.css" rel="stylesheet" />
+<link id="google_font" href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:light,regular' rel='stylesheet' type='text/css' />
+<!-- fallback if js not enabled //-->
+<link href="css/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" /> 
+<!-- CSS End //-->
+
+
+<!-- JS Start //--> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.livequery.min.js"></script>
+<script type="text/javascript" src="js/jquery.detectbrowser.js"></script> 
+<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="js/jquery.plusslider.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.jparallax.min.js"></script>
+<script type="text/javascript" src="js/jquery.infieldlabel.min.js"></script>
+<script type="text/javascript" src="js/jquery.twitter.js"></script>
+<script type="text/javascript" src="js/jquery.supersubs.js"></script>
+<script type="text/javascript" src="js/jquery.superfish.js"></script>
+<script type="text/javascript" src="js/functions.js"></script> 
+<!-- JS End //--> 
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#slider').plusSlider({
+		sliderEasing: 'easeInOutExpo', // Anything other than 'linear' and 'swing' requires the easing plugin
+		paginationBefore: true,
+		width: 1920,
+		height: 500,
+		sliderType: 'fader', // Choose whether the carousel is a 'slider' or a 'fader'
+		displayTime: 5000
+	});
+	
+    $('#parallax li').parallax(
+	{mouseport: $('#parallax')}, {xparallax: '100px', yparallax: '30px'}, {xparallax: '300px', yparallax: '50px'}, {xparallax: '150px', yparallax: '30px'}, {xparallax: '250px', yparallax: '70px'}
+	);
+});
+</script> 
+
+<!-- DEMO PANEL Files Start -->
+<link href="demo/demo.css" rel="stylesheet" />
+<script type="text/javascript" src="demo/demo.js"></script> 
+<script type="text/javascript" src="demo/jscolor/jscolor.js"></script> 
+<style id="colors" type="text/css"></style>
+<style id="font_styles" type="text/css"></style>
+<style id="pattern" type="text/css">
+body {background-image:url(images/pattern/ptn-04.png);}
+.partner_hotels {font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	text-align: right;
+}
+</style>
+<!-- DEMO PANEL Fiels End -->
+</head>
+
+<body class="homepage">
+
+<!-- DEMO PANEL Start -->
+<div id="demopanel">
+    <div id="panel">
+		<h3>Options</h3>
+		<div class="heading">Color:</div>
+		<div class="selector">
+        	<input class="color {pickerPosition:'right'}" value="457E86" id="jscolorInput" name="jscolorInput" type="text" size="18" />
+        </div>
+        <div class="heading">Pattern:</div>
+		<div class="selector">
+        	<ul class="patterns">
+                <li class="nobg"></li>
+                <li title="ptn-1" class="ptn-1"></li>
+                <li title="ptn-2" class="ptn-2"></li>
+                <li title="ptn-3" class="ptn-3"></li>
+                <li title="ptn-4" class="ptn-4"></li>
+                <li title="ptn-5" class="ptn-5"></li>
+                <li title="ptn-6" class="ptn-6"></li>
+                <li title="ptn-7" class="ptn-7"></li>
+                <li title="ptn-8" class="ptn-8"></li>
+                <li title="ptn-9" class="ptn-9"></li>
+                <li title="ptn-10" class="ptn-10"></li>
+                <li title="ptn-11" class="ptn-11"></li>
+                <li title="ptn-12" class="ptn-12"></li>
+                <li title="ptn-13" class="ptn-13"></li>
+                <li title="ptn-14" class="ptn-14"></li>
+                <li title="ptn-15" class="ptn-15"></li>
+                <li title="ptn-16" class="ptn-16"></li>
+                <li title="ptn-17" class="ptn-17"></li>
+                <li title="ptn-18" class="ptn-18"></li>
+                <li title="ptn-19" class="ptn-19"></li>
+        	</ul>
+            <div class="clear"></div>
+        </div><!-- end patterns -->
+        <div class="heading">Google Fonts</div>
+        <select name="font_list" id="font_list">
+            <option value='Ubuntu' />Ubuntu
+            <option value='Walter+Turncoat' />Walter Turncoat
+
+            <option value='Lato' />Lato
+            <option value='Amaranth' />Amaranth
+            <option value='Pacifico' />Pacifico
+            <option value='Anton' />Anton
+            <option value='Luckiest+Guy' />Luckiest Guy
+            <option value='Permanent+Marker' />Permanent Marker
+
+            <option value='Merriweather' />Merriweather
+            <option value='Cuprum' />Cuprum
+            <option value='Neuton' />Neuton
+            <option value='Lobster' />Lobster
+            <option value='Allan' />Allan
+
+            <option value='Allerta' />Allerta
+            <option value='Allerta+Stencil' />Allerta Stencil
+            <option value='Anonymous+Pro' />Anonymous Pro
+            <option value='Arimo' />Arimo
+            <option value='Arvo' />Arvo
+            <option value='Astloch' />Astloch
+
+            <option value='Bentham' />Bentham
+            <option value='Bevan' />Bevan
+            <option value='Buda:light' />Buda
+            <option value='Cabin' />Cabin
+            <option value='Cabin+Sketch' />Cabin Sketch
+            <option value='Calligraffitti' />Calligraffitti
+
+            <option value='Candal' />Candal
+            <option value='Cantarell' />Cantarell
+            <option value='Cardo' />Cardo
+            <option value='Cherry+Cream+Soda' />Cherry Cream Soda
+            <option value='Chewy' />Chewy
+            <option value='Coda:800' />Coda
+
+            <option value='Coda+Caption:800' />Coda Caption
+            <option value='Coming+Soon' />Coming Soon
+            <option value='Copse' />Copse
+            <option value='Corben' />Corben
+            <option value='Cousine' />Cousine
+            <option value='Covered+By+Your+Grace' />Covered By Your Grace
+
+            <option value='Crafty+Girls' />Crafty Girls
+            <option value='Crimson+Text' />Crimson Text
+            <option value='Crushed' />Crushed
+            <option value='Dancing+Script' />Dancing Script
+            <option value='Droid+Sans' />Droid Sans
+            <option value='Droid+Sans+Mono' />Droid Sans Mono
+
+            <option value='Droid+Serif' />Droid Serif
+            <option value='EB+Garamond' />EB Garamond
+            <option value='Expletus+Sans' />Expletus Sans
+            <option value='Fontdiner+Swanky' />Fontdiner Swanky
+            <option value='Geo' />Geo
+            <option value='Goudy+Bookletter+1911' />Goudy Bookletter 1911
+
+            <option value='Gruppo' />Gruppo
+            <option value='Homemade+Apple' />Homemade Apple
+            <option value='IM+Fell+DW+Pica' />IM Fell DW Pica
+            <option value='IM+Fell+French+Canon+SC' />IM Fell French Canon SC
+            <option value='IM+Fell+French+Canon' />IM Fell French Canon
+            <option value='IM+Fell+Great+Primer+SC' />IM Fell Great Primer SC
+
+            <option value='IM+Fell+Great+Primer' />IM Fell Great Primer
+            <option value='IM+Fell+English+SC' />IM Fell English SC
+            <option value='IM+Fell+English' />IM Fell English
+            <option value='IM+Fell+DW+Pica+SC' />IM Fell DW Pica SC
+            <option value='IM+Fell+Double+Pica+SC' />IM Fell Double Pica SC
+            <option value='IM+Fell+Double+Pica' />IM Fell Double Pica
+
+            <option value='Inconsolata' />Inconsolata
+            <option value='Indie+Flower' />Indie Flower
+            <option value='Irish+Grover' />Irish Grover
+            <option value='Josefin+Sans' />Josefin Sans
+            <option value='Josefin+Slab' />Josefin Slab
+            <option value='Just+Another+Hand' />Just Another Hand
+
+            <option value='Just+Me+Again+Down+Here' />Just Me Again Down Here
+            <option value='Kenia' />Kenia
+            <option value='Kranky' />Kranky
+            <option value='Kreon' />Kreon
+            <option value='Kristi' />Kristi
+            <option value='League+Script' />League Script
+
+            <option value='Lekton' />Lekton
+            <option value='Meddon' />Meddon
+            <option value='MedievalSharp' />MedievalSharp
+            <option value='Molengo' />Molengo
+            <option value='Mountains+of+Christmas' />Mountains of Christmas
+            <option value='Neucha' />Neucha
+
+            <option value='Nobile' />Nobile
+            <option value='Nova+Script' />Nova Script
+            <option value='Nova+Round' />Nova Round
+            <option value='Nova+Oval' />Nova Oval
+            <option value='Nova+Mono' />Nova Mono
+            <option value='Nova+Cut' />Nova Cut
+
+            <option value='Nova+Slim' />Nova Slim
+            <option value='Nova+Flat' />Nova Flat
+            <option value='OFL+Sorts+Mill+Goudy+TT' />OFL Sorts Mill Goudy TT
+            <option value='Old+Standard+TT' />Old Standard TT
+            <option value='Orbitron' />Orbitron
+            <option value='Oswald' />Oswald
+
+            <option value='Philosopher' />Philosopher
+            <option value='PT+Sans' />PT Sans
+            <option value='PT+Sans+Narrow' />PT Sans Narrow
+            <option value='PT+Sans+Caption' />PT Sans Caption
+            <option value='PT+Serif' />PT Serif
+            <option value='PT+Serif+Caption' />PT Serif Caption
+
+            <option value='Puritan' />Puritan
+            <option value='Quattrocento' />Quattrocento
+            <option value='Raleway:100' />Raleway
+            <option value='Reenie+Beanie' />Reenie Beanie
+            <option value='Rock+Salt' />Rock Salt
+            <option value='Schoolbell' />Schoolbell
+
+            <option value='Slackey' />Slackey
+            <option value='Sniglet:800' />Sniglet
+            <option value='Sunshiney' />Sunshiney
+            <option value='Syncopate' />Syncopate
+            <option value='Tangerine' />Tangerine
+            <option value='Tinos' />Tinos
+
+            <option value='UnifrakturCook' />UnifrakturCook
+            <option value='UnifrakturMaguntia' />UnifrakturMaguntia
+            <option value='Unkempt' />Unkempt
+            <option value='VT323' />VT323
+            <option value='Vibur' />Vibur
+            <option value='Vollkorn' />Vollkorn
+
+            <option value='Walter+Turncoat' />Walter Turncoat
+            <option value='Yanone+Kaffeesatz' selected="selected" />Yanone Kaffeesatz
+        </select>
+    </div><!-- close #panel --><!-- close #panel_button -->
+  <div style="left: 0px; display: none;" class="panel_button hide_button"><img alt="collapse" src="images/collapse.png" /> </div> <!-- close #panel_button -->
+</div>
+<!-- DEMO PANEL End -->
+
+<div id="wrapper">
+  <div id="header">
+    	<div class="container_12">
+<div class="grid_3">
+                <a href="index.html" title="Hotel Quinta Real" id="logo">Hotel Quinta Real</a>
+            </div>
+            
+<div class="grid_9">
+                <ul class="menu sf-menu">
+                    </li>
+                    <li><a href="index.html">Inicio</a></li>
+                    </li>
+                    <li><a href="habitaciones.html">Habitaciones</a></li>
+                    </li>
+                    <li><a href="convenciones.html">Convenciones</a></li>
+                    <li><a href="instalaciones.html">Instalaciones</a></li>
+                    <li><a href="reservaciones.html">Reservaciones</a></li>
+                    </li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="index_eng.html">English</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div><!--Header End -->
+    
+    <div id="slideshow" class="plusslider-parallax">
+    	<div id="slider"> 
+        	<div class="slide1">
+                <img src="images/slides/slide1.jpg" alt="Demo Slide" />
+            </div>
+            <div class="slide2">
+                <img src="images/slides/slide2.jpg" alt="Demo Slide" />
+            </div>
+            <div class="slide3">
+                <img src="images/slides/slide3.jpg" alt="Demo Slide" />
+            </div>
+            <div class="slide6">
+                <img src="images/slides/slide6.jpg" alt="Demo Slide" />
+            </div>
+		</div><!-- Slider Container End -->
+        
+        <ul id="parallax">
+        	<li class="prl1"></li>
+            <li class="prl2"></li>
+            <li class="prl3"></li>
+            <li class="prl4"></li>
+        </ul>
+        <div class="btnPanel">
+            <div id="slidehref"></div>
+            <a href="#" id="playpause" class="pause">pause</a>
+        </div>
+    </div><!-- Slideshow End -->
+    
+  <div id="container" class="container_12 clearfix">
+    
+    	<div class="block" id="latest_work">
+<div class="grid_12">
+                <ul>
+                	<li>
+                    	<a href="reservaciones.html">
+                    	<img src="images/home_works_01.jpg" alt="Some Project" width="300" />
+                        <div class="description-overlay">
+                       	  <h4>Reservaciones</h4>
+                            <p>Comuníquese con nosotros para cualquier consulta a través de nuestros teléfonos o por e-mail y, si lo desea, haga sus reservaciones mediante nuestra forma online haciendo click en este enlace.</p>
+                        </div>
+                      </a>
+          </li>
+					<li>
+                   		<a href="instalaciones.html">
+                    	<img src="images/home_works_02.jpg" alt="Some Project" />
+                        <div class="description-overlay">
+                        	<h4>Instalaciones</h4>
+                            <p>Reciba el sol tropical en nuestra área de piscina, refrescándose en nuestras dos cascadas mientras le servimos deliciosas bebidas de nuestro bar con espectacular vista de la playa y el Mar Caribe.</p>
+                        </div>
+                        </a>
+					</li>
+					<li>
+                   		<a href="habitaciones.html">
+                    	<img src="images/home_works_03.jpg" alt="Some Project" />
+                        <div class="description-overlay">
+                        	<h4>Habitaciones</h4>
+                            <p>Contamos con 81 habitaciones finamente decoradas, incluyendo habitaciones sencillas, dobles,suites y junior suites.</p>
+                        </div>
+                        </a>
+                   </li>
+            	</ul>
+            </div><!-- Latest work end -->
+            <div class="clear"></div>
+        </div><!-- Block End -->
+        
+    <div class="block">
+<div class="grid_6">
+                <h2 class="title">Bienvenidos al Hotel
+y Centro de Convenciones
+Quinta Real</h2>
+                <p>Ubicado estratégicamente a la orilla del Mar Caribe, en el puerto de La Ceiba, Honduras; el Hotel y Centro de Convenciones Quinta Real fue diseñado para ofrecerle todas las comodidades que le harán disfrutar su estadía al máximo.
+
+Le invitamos a pasar con nosotros los más inolvidables días en la ciudad más alegre y festiva de Honduras, Ceibita La Bella!</p>
+        	</div>
+<div class="grid_6">
+  <h2 class="title">El Mejor Resort en La Ceiba, Honduras</h2>
+  <p>Debido a nuestra estratégica ubicación, en la playa y en el corazón de la llamada Zona Viva, usted podrá disfrutar de todos los atractivos que ofrece esta fascinante ciudad, ya sea en viajes de placer o de negocios.</p>
+</div>
+    </div><!-- Block End --><!-- Block End -->
+        
+  </div><!-- Container End -->
+  <div id="bottom">
+    <!-- Container 12 End -->
+    <div id="footer2" class="container_12">
+      <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td> © Copyright 2011 Quinta Real "Hotel y Centro de Convenciones"  Diseño: www.holaceibita.com </td>
+          <td class="partner_hotels"><a href="hoteles_asociados.html">Visite Nuestros Hoteles Asociados</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- Bottom End -->
+</div><!-- Wrapper end -->
+
+<script type="text/javascript">$('#noscript').remove();</script> 
+</body>
