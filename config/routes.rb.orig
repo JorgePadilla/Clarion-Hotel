@@ -1,10 +1,25 @@
 Clarion::Application.routes.draw do
+
 <<<<<<< HEAD
-=======
   get "galeria/index"
 
->>>>>>> 730b9c9c188d96e8f9e5d4c80335a597e6894ddd
   resources :ingles
+=======
+  resources :advertisements
+
+  get "fotos/upload"
+
+  get "sessions/new"
+
+  get "users/new"
+  get "galeria/index"
+
+  resources :ingles
+  resources :users
+resources :sessions
+resources :fotos
+
+>>>>>>> 6932b268cf626212a78e7bacbc1e3703ad2dea58
 
   #get "reservacion/index"
 
@@ -13,19 +28,19 @@ Clarion::Application.routes.draw do
   resources :habitaciones
   match "instalaciones" => "instalacion#index"
   match "reservaciones"  => "reservacion#index"
-<<<<<<< HEAD
-  match "reservaciones_show"  => "reservacion#show"
-  
-  
-  get "habitaciones/index"
-  match "ingles" => "ingles#index"
-  get "home/index"
-=======
   get "habitaciones/index"
   match "ingles" => "ingles#index"
   get "home/index"
   match "galeria" => "galeria#index"
->>>>>>> 730b9c9c188d96e8f9e5d4c80335a597e6894ddd
+
+<<<<<<< HEAD
+=======
+match "sign_up" => "users#new"
+match "promociones" => "sessions#new"
+match "log_out" => "sessions#destroy"
+match "upload" => "fotos#upload"
+
+>>>>>>> 6932b268cf626212a78e7bacbc1e3703ad2dea58
  
   
   # The priority is based upon order of creation:

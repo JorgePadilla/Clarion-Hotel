@@ -1,0 +1,23 @@
+class ReservacionController < ApplicationController
+  def index
+<<<<<<< HEAD
+    
+  end
+    
+   
+=======
+
+    flash.now[:notice] = 'Message sent!'
+    UserMailer.registration_confirmation("jp").deliver
+  end
+    
+    def show
+     
+   
+    ReservacionMailer.registration_confirmation(@user).deliver
+    redirect_to :action => "index", :controller => "home"
+  end
+   
+
+>>>>>>> 75cfe42f3b0b3d90f68ed26775c8899fb83bf7ae
+end

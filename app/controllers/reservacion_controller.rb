@@ -1,6 +1,5 @@
 class ReservacionController < ApplicationController
   def index
-
     flash.now[:notice] = 'Message sent!'
     UserMailer.registration_confirmation("jp").deliver
   end

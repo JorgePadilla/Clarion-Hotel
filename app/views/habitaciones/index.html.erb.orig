@@ -256,10 +256,21 @@ body {background-image:url(images/pattern/ptn-04.png);}
                  <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
                 </li>
 <<<<<<< HEAD
-                <li><a href="galeria.html">Galería</a></li>
 =======
+<<<<<<< HEAD
                  <li><%= link_to t('galeria_clarion'), galeria_path %></li>
->>>>>>> 730b9c9c188d96e8f9e5d4c80335a597e6894ddd
+                 <li><%= link_to t('promociones_clarion'), promociones_path %></li>
+=======
+>>>>>>> 6932b268cf626212a78e7bacbc1e3703ad2dea58
+
+
+
+                 <li><%= link_to t('galeria_clarion'), galeria_path %></li>
+
+<<<<<<< HEAD
+=======
+>>>>>>> 75cfe42f3b0b3d90f68ed26775c8899fb83bf7ae
+>>>>>>> 6932b268cf626212a78e7bacbc1e3703ad2dea58
                 <% if t('idioma_clarion') == "English" %>
                          <li><%= link_to t('idioma_clarion'), habitaciones_path(:locale => "en") %></li>
                                 <% else %>
