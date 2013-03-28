@@ -1,4 +1,5 @@
 Clarion::Application.routes.draw do
+
   resources :advertisements
 
   get "fotos/upload"
@@ -6,13 +7,13 @@ Clarion::Application.routes.draw do
   get "sessions/new"
 
   get "users/new"
-
   get "galeria/index"
 
   resources :ingles
   resources :users
 resources :sessions
 resources :fotos
+
 
   #get "reservacion/index"
 
@@ -25,11 +26,11 @@ resources :fotos
   match "ingles" => "ingles#index"
   get "home/index"
   match "galeria" => "galeria#index"
+
 match "sign_up" => "users#new"
 match "promociones" => "sessions#new"
 match "log_out" => "sessions#destroy"
 match "upload" => "fotos#upload"
-
 
  
   

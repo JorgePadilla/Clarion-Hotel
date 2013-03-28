@@ -11,6 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+
 ActiveRecord::Schema.define(:version => 20130327212037) do
 
   create_table "advertisements", :force => true do |t|
@@ -21,11 +22,6 @@ ActiveRecord::Schema.define(:version => 20130327212037) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
-  end
-
-  create_table "englishes", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
   end
 
   create_table "fotos", :force => true do |t|
@@ -58,5 +54,4 @@ ActiveRecord::Schema.define(:version => 20130327212037) do
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
   end
-
 end

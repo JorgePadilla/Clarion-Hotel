@@ -4,8 +4,12 @@ gem 'rails', '3.2.2'
 gem 'execjs'
 gem 'simple_form'
 gem 'therubyracer'
+<<<<<<< HEAD
 gem "bcrypt-ruby", :require => "bcrypt"
 gem "paperclip", "~> 3.4.1"
+=======
+
+>>>>>>> 75cfe42f3b0b3d90f68ed26775c8899fb83bf7ae
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

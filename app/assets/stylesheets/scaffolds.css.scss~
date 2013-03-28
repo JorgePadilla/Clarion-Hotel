@@ -21,7 +21,11 @@ a {
     color: #666; }
   &:hover {
     color: #fff;
+<<<<<<< HEAD
+    background-color: #000; } }
+=======
     } }
+>>>>>>> 75cfe42f3b0b3d90f68ed26775c8899fb83bf7ae
 
 div {
   &.field, &.actions {

@@ -29,12 +29,16 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     arel (3.0.2)
+<<<<<<< HEAD
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.1)
       climate_control (>= 0.0.3, < 1.0)
+=======
+    builder (3.0.0)
+>>>>>>> 75cfe42f3b0b3d90f68ed26775c8899fb83bf7ae
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -59,12 +63,15 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.18)
     multi_json (1.1.0)
+<<<<<<< HEAD
     paperclip (3.4.1)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.0)
       mime-types
+=======
+>>>>>>> 75cfe42f3b0b3d90f68ed26775c8899fb83bf7ae
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -122,11 +129,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
   bcrypt-ruby
   coffee-rails (~> 3.2.1)
   execjs
   jquery-rails
   paperclip (~> 3.4.1)
+=======
+  coffee-rails (~> 3.2.1)
+  execjs
+  jquery-rails
+>>>>>>> 75cfe42f3b0b3d90f68ed26775c8899fb83bf7ae
   rails (= 3.2.2)
   sass-rails (~> 3.2.3)
   simple_form
