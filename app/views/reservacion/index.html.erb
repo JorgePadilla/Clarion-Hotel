@@ -1,0 +1,480 @@
+<!DOCTYPE html> 
+ 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="robots" content="index, follow" /> 
+<meta name="keywords" content="" /> 
+<meta name="description" content="" /> 
+<title>HOTEL CLARION, SAN PEDRO SULA</title> 
+  
+<!-- CSS Start //--> 
+<link rel="shortcut icon" href="images/favicon.png" /> 
+<link href="style.css" rel="stylesheet" type="text/css" /> 
+<link href="css/colorbox.css" rel="stylesheet" type="text/css" /> 
+<link href="css/plusslider.css" rel="stylesheet" />
+<link href="css/superfish.css" rel="stylesheet" />
+<link id="google_font" href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:light,regular' rel='stylesheet' type='text/css' />
+<!-- fallback if js not enabled //-->
+<link href="css/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" /> 
+<!-- CSS End //-->
+
+<!-- JS Start //--> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.livequery.min.js"></script>
+<script type="text/javascript" src="js/jquery.detectbrowser.js"></script> 
+<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="js/jquery.plusslider.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.jparallax.min.js"></script>
+<script type="text/javascript" src="js/jquery.infieldlabel.min.js"></script>
+<script type="text/javascript" src="js/jquery.twitter.js"></script>
+<script type="text/javascript" src="js/jquery.supersubs.js"></script>
+<script type="text/javascript" src="js/jquery.superfish.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript" src="js/functions.js"></script> 
+<!-- JS End //--> 
+<script type="text/javascript">
+function load() {
+	
+	// change this coordinates
+	var point = new google.maps.LatLng(15.79246,-86.790056);
+
+	var myMapOptions = {
+		scrollwheel:false,
+		zoom: 20,
+		center: point,
+		mapTypeControl: true,
+		mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+		navigationControl: true,
+		navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+		mapTypeId: google.maps.MapTypeId.SATELLITE
+	};
+	
+	var map = new google.maps.Map(document.getElementById('map'),myMapOptions);
+	
+	var image = new google.maps.MarkerImage(
+	  'images/marker-images/image.png',
+	  new google.maps.Size(140,153),
+	  new google.maps.Point(0,0),
+	  new google.maps.Point(70,153)
+	);
+	
+	var shadow = new google.maps.MarkerImage(
+	  'images/marker-images/shadow.png',
+	  new google.maps.Size(220,153),
+	  new google.maps.Point(0,0),
+	  new google.maps.Point(70,153)
+	);
+	
+	var shape = {
+
+	  coord: [69,0,80,1,84,2,87,3,90,4,93,5,96,6,98,7,100,8,102,9,104,10,105,11,107,12,108,13,110,14,111,15,112,16,113,17,115,18,115,19,117,20,118,21,119,22,120,23,121,24,122,25,123,26,124,27,124,28,125,29,126,30,127,31,127,32,128,33,129,34,129,35,130,36,130,37,131,38,131,39,132,40,132,41,133,42,133,43,133,44,134,45,134,46,135,47,135,48,135,49,136,50,136,51,136,52,136,53,136,54,137,55,137,56,137,57,137,58,137,59,138,60,138,61,138,62,138,63,138,64,138,65,138,66,138,67,138,68,138,69,138,70,138,71,138,72,139,73,139,74,138,75,139,76,139,77,139,78,139,79,138,80,138,81,138,82,138,83,137,84,137,85,137,86,137,87,137,88,136,89,136,90,136,91,135,92,135,93,135,94,134,95,134,96,133,97,133,98,132,99,132,100,131,101,131,102,130,103,130,104,129,105,128,106,128,107,127,108,127,109,126,110,125,111,124,112,124,113,123,114,122,115,122,116,121,117,120,118,119,119,118,120,117,121,116,122,115,123,114,124,113,125,112,126,110,127,109,128,107,129,106,130,103,131,102,132,100,133,99,134,96,135,93,136,89,137,86,138,83,139,79,140,78,141,77,142,76,143,75,144,75,145,74,146,73,147,72,148,71,149,70,150,70,151,70,152,68,152,67,151,67,150,66,149,65,148,64,147,64,146,63,145,62,144,61,143,60,142,60,141,59,140,56,139,52,138,47,137,45,136,43,135,41,134,39,133,37,132,35,131,33,130,32,129,30,128,29,127,28,126,26,125,26,124,24,123,23,122,22,121,21,120,20,119,18,118,18,117,17,116,16,115,15,114,14,113,13,112,13,111,12,110,11,109,11,108,10,107,10,106,9,105,8,104,8,103,7,102,7,101,7,100,6,99,6,98,5,97,5,96,5,95,4,94,4,93,4,92,3,91,3,90,3,89,2,88,2,87,2,86,2,85,2,84,2,83,1,82,1,81,1,80,0,79,0,78,0,77,0,76,0,75,0,74,0,73,0,72,0,71,0,70,0,69,0,68,0,67,0,66,0,65,0,64,0,63,0,62,1,61,1,60,1,59,1,58,1,57,2,56,2,55,2,54,3,53,3,52,3,51,3,50,4,49,4,48,4,47,5,46,5,45,6,44,6,43,7,42,7,41,8,40,8,39,9,38,9,37,10,36,10,35,11,34,11,33,12,32,13,31,14,30,14,29,15,28,16,27,17,26,17,25,18,24,19,23,20,22,21,21,21,20,22,19,24,18,25,17,26,16,27,15,29,14,30,13,31,12,33,11,35,10,36,9,39,8,41,7,43,6,45,5,49,4,53,3,56,2,65,1,69,0,69,0],
+	  type: 'poly'
+	};
+	
+	var marker = new google.maps.Marker({
+		draggable:true,
+		raiseOnDrag: false,
+		icon: image,
+		shadow: shadow,
+		shape: shape,
+		map: map,
+		position: point
+		
+	});
+}
+$(document).ready(function() {
+	
+	// load the map
+    load();
+	
+	//process the contact form
+	$('#submit-form').click(function(){
+		var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		var names  = $('#contact-form [name="contact-names"]').val();  
+		var email_address = $('#contact-form [name="contact-email"]').val();
+		var comment  = $.trim($('#contact-form #message').val());
+		var data_html ='' ;
+
+		if(names == ""){
+			$('.name-required').html('Please enter your name.');
+		}else{
+			$('.name-required').html('');
+		}
+		if(email_address == ""){
+			$('.email-required').html('Your email is required.');
+		}else if(reg.test(email_address) == false){
+			$('.email-required').html('Invalid Email Address.');
+		}else{
+			$('.email-required').html('');
+		}
+
+		if(comment == ""){
+			$('.comment-required').html('Comment is required.');
+		}else{
+			$('.comment-required').html('');
+		}
+
+		if(comment != "" && names != "" && reg.test(email_address) != false) {
+			data_html = "names="+ names + "&comment=" + comment + "&email_address="+ email_address;
+			//alert(data_html);
+			$.ajax({
+				type: 'POST',
+				url: 'contact_send.php',
+				data: data_html,
+				success: function(msg){
+					if (msg == 'sent'){
+						$('#success').html('<div class="success">Message sent!</div>')  ;
+						$('#contact-form [name="contact-names"]').val('');  
+						$('#contact-form [name="contact-email"]').val('');
+						$('#contact-form #message').val('');
+					}else{
+						$('#success').html('<div class="error">Mail Error. Please Try Again!</div>')  ; 
+					}
+				}
+			});
+
+		}
+		return false;
+	});
+});
+</script> 
+<!-- DEMO PANEL Files Start -->
+<link href="demo/demo.css" rel="stylesheet" />
+<script type="text/javascript" src="demo/demo.js"></script> 
+<script type="text/javascript" src="demo/jscolor/jscolor.js"></script> 
+<style id="colors" type="text/css"></style>
+<style id="font_styles" type="text/css"></style>
+<style id="pattern" type="text/css">
+body {background-image:url(images/pattern/ptn-04.png);}
+.partner_hotels {font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	text-align: right;
+}
+</style>
+<!-- DEMO PANEL Fiels End -->
+</head>
+
+<body>
+
+<!-- DEMO PANEL Start -->
+<div id="demopanel">
+    <div id="panel">
+		<h3>Options</h3>
+		<div class="heading">Color:</div>
+		<div class="selector">
+        	<input class="color {pickerPosition:'right'}" value="457E86" id="jscolorInput" name="jscolorInput" type="text" size="18" />
+        </div>
+        <div class="heading">Pattern:</div>
+		<div class="selector">
+        	<ul class="patterns">
+                <li class="nobg"></li>
+                <li title="ptn-1" class="ptn-1"></li>
+                <li title="ptn-2" class="ptn-2"></li>
+                <li title="ptn-3" class="ptn-3"></li>
+                <li title="ptn-4" class="ptn-4"></li>
+                <li title="ptn-5" class="ptn-5"></li>
+                <li title="ptn-6" class="ptn-6"></li>
+                <li title="ptn-7" class="ptn-7"></li>
+                <li title="ptn-8" class="ptn-8"></li>
+                <li title="ptn-9" class="ptn-9"></li>
+                <li title="ptn-10" class="ptn-10"></li>
+                <li title="ptn-11" class="ptn-11"></li>
+                <li title="ptn-12" class="ptn-12"></li>
+                <li title="ptn-13" class="ptn-13"></li>
+                <li title="ptn-14" class="ptn-14"></li>
+                <li title="ptn-15" class="ptn-15"></li>
+                <li title="ptn-16" class="ptn-16"></li>
+                <li title="ptn-17" class="ptn-17"></li>
+                <li title="ptn-18" class="ptn-18"></li>
+                <li title="ptn-19" class="ptn-19"></li>
+        	</ul>
+            <div class="clear"></div>
+        </div><!-- end patterns -->
+        <div class="heading">Google Fonts</div>
+        <select name="font_list" id="font_list">
+            <option value='Ubuntu' />Ubuntu
+            <option value='Walter+Turncoat' />Walter Turncoat
+
+            <option value='Lato' />Lato
+            <option value='Amaranth' />Amaranth
+            <option value='Pacifico' />Pacifico
+            <option value='Anton' />Anton
+            <option value='Luckiest+Guy' />Luckiest Guy
+            <option value='Permanent+Marker' />Permanent Marker
+
+            <option value='Merriweather' />Merriweather
+            <option value='Cuprum' />Cuprum
+            <option value='Neuton' />Neuton
+            <option value='Lobster' />Lobster
+            <option value='Allan' />Allan
+
+            <option value='Allerta' />Allerta
+            <option value='Allerta+Stencil' />Allerta Stencil
+            <option value='Anonymous+Pro' />Anonymous Pro
+            <option value='Arimo' />Arimo
+            <option value='Arvo' />Arvo
+            <option value='Astloch' />Astloch
+
+            <option value='Bentham' />Bentham
+            <option value='Bevan' />Bevan
+            <option value='Buda:light' />Buda
+            <option value='Cabin' />Cabin
+            <option value='Cabin+Sketch' />Cabin Sketch
+            <option value='Calligraffitti' />Calligraffitti
+
+            <option value='Candal' />Candal
+            <option value='Cantarell' />Cantarell
+            <option value='Cardo' />Cardo
+            <option value='Cherry+Cream+Soda' />Cherry Cream Soda
+            <option value='Chewy' />Chewy
+            <option value='Coda:800' />Coda
+
+            <option value='Coda+Caption:800' />Coda Caption
+            <option value='Coming+Soon' />Coming Soon
+            <option value='Copse' />Copse
+            <option value='Corben' />Corben
+            <option value='Cousine' />Cousine
+            <option value='Covered+By+Your+Grace' />Covered By Your Grace
+
+            <option value='Crafty+Girls' />Crafty Girls
+            <option value='Crimson+Text' />Crimson Text
+            <option value='Crushed' />Crushed
+            <option value='Dancing+Script' />Dancing Script
+            <option value='Droid+Sans' />Droid Sans
+            <option value='Droid+Sans+Mono' />Droid Sans Mono
+
+            <option value='Droid+Serif' />Droid Serif
+            <option value='EB+Garamond' />EB Garamond
+            <option value='Expletus+Sans' />Expletus Sans
+            <option value='Fontdiner+Swanky' />Fontdiner Swanky
+            <option value='Geo' />Geo
+            <option value='Goudy+Bookletter+1911' />Goudy Bookletter 1911
+
+            <option value='Gruppo' />Gruppo
+            <option value='Homemade+Apple' />Homemade Apple
+            <option value='IM+Fell+DW+Pica' />IM Fell DW Pica
+            <option value='IM+Fell+French+Canon+SC' />IM Fell French Canon SC
+            <option value='IM+Fell+French+Canon' />IM Fell French Canon
+            <option value='IM+Fell+Great+Primer+SC' />IM Fell Great Primer SC
+
+            <option value='IM+Fell+Great+Primer' />IM Fell Great Primer
+            <option value='IM+Fell+English+SC' />IM Fell English SC
+            <option value='IM+Fell+English' />IM Fell English
+            <option value='IM+Fell+DW+Pica+SC' />IM Fell DW Pica SC
+            <option value='IM+Fell+Double+Pica+SC' />IM Fell Double Pica SC
+            <option value='IM+Fell+Double+Pica' />IM Fell Double Pica
+
+            <option value='Inconsolata' />Inconsolata
+            <option value='Indie+Flower' />Indie Flower
+            <option value='Irish+Grover' />Irish Grover
+            <option value='Josefin+Sans' />Josefin Sans
+            <option value='Josefin+Slab' />Josefin Slab
+            <option value='Just+Another+Hand' />Just Another Hand
+
+            <option value='Just+Me+Again+Down+Here' />Just Me Again Down Here
+            <option value='Kenia' />Kenia
+            <option value='Kranky' />Kranky
+            <option value='Kreon' />Kreon
+            <option value='Kristi' />Kristi
+            <option value='League+Script' />League Script
+
+            <option value='Lekton' />Lekton
+            <option value='Meddon' />Meddon
+            <option value='MedievalSharp' />MedievalSharp
+            <option value='Molengo' />Molengo
+            <option value='Mountains+of+Christmas' />Mountains of Christmas
+            <option value='Neucha' />Neucha
+
+            <option value='Nobile' />Nobile
+            <option value='Nova+Script' />Nova Script
+            <option value='Nova+Round' />Nova Round
+            <option value='Nova+Oval' />Nova Oval
+            <option value='Nova+Mono' />Nova Mono
+            <option value='Nova+Cut' />Nova Cut
+
+            <option value='Nova+Slim' />Nova Slim
+            <option value='Nova+Flat' />Nova Flat
+            <option value='OFL+Sorts+Mill+Goudy+TT' />OFL Sorts Mill Goudy TT
+            <option value='Old+Standard+TT' />Old Standard TT
+            <option value='Orbitron' />Orbitron
+            <option value='Oswald' />Oswald
+
+            <option value='Philosopher' />Philosopher
+            <option value='PT+Sans' />PT Sans
+            <option value='PT+Sans+Narrow' />PT Sans Narrow
+            <option value='PT+Sans+Caption' />PT Sans Caption
+            <option value='PT+Serif' />PT Serif
+            <option value='PT+Serif+Caption' />PT Serif Caption
+
+            <option value='Puritan' />Puritan
+            <option value='Quattrocento' />Quattrocento
+            <option value='Raleway:100' />Raleway
+            <option value='Reenie+Beanie' />Reenie Beanie
+            <option value='Rock+Salt' />Rock Salt
+            <option value='Schoolbell' />Schoolbell
+
+            <option value='Slackey' />Slackey
+            <option value='Sniglet:800' />Sniglet
+            <option value='Sunshiney' />Sunshiney
+            <option value='Syncopate' />Syncopate
+            <option value='Tangerine' />Tangerine
+            <option value='Tinos' />Tinos
+
+            <option value='UnifrakturCook' />UnifrakturCook
+            <option value='UnifrakturMaguntia' />UnifrakturMaguntia
+            <option value='Unkempt' />Unkempt
+            <option value='VT323' />VT323
+            <option value='Vibur' />Vibur
+            <option value='Vollkorn' />Vollkorn
+
+            <option value='Walter+Turncoat' />Walter Turncoat
+            <option value='Yanone+Kaffeesatz' selected="selected" />Yanone Kaffeesatz
+        </select>
+    </div><!-- close #panel --><!-- close #panel_button -->
+  <div style="left: 0px; display: none;" class="panel_button hide_button"><img alt="collapse" src="images/collapse.png" /> </div> <!-- close #panel_button -->
+</div>
+<!-- DEMO PANEL End -->
+
+<div id="wrapper">
+  <div id="header">
+    	<div class="container_12">
+            <div class="grid_3">
+
+              <%= link_to( image_tag("logo.png"), root_path)%>
+
+            </div>
+            <div class="grid_9">
+              <ul class="menu sf-menu">
+
+                    </li>
+
+		    		 <li><%= link_to t('inicio_clarion'), root_path %></li>
+
+                    </li>
+                     <li><%= link_to t('habitaciones_clarion'), habitaciones_path %></li>
+                    </li>
+                    <li><a href="convenciones.
+html">Honduras</a></li>
+                    <li><%= link_to t('instalaciones_clarion'), instalaciones_path %></li>
+                 <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
+                    </li>
+
+                    <li><%= link_to t('galeria_clarion'), galeria_path %></li>
+                     <% if t('idioma_clarion') == "English" %>
+                         <li><%= link_to t('idioma_clarion'), reservaciones_path(:locale => "en") %></li>
+                                <% else %>
+                                   <li><%= link_to t('idioma_clarion'), reservaciones_path(:locale => "es") %></li>  
+                                       <% end %>    
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div><!--Header End -->
+    <div id="pagetitle">
+      <div class="wrapper">
+        <div class="container_12">
+          <div class="grid_12">
+            <h1><%=t :reservaciones_clarion%></h1>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div id="container" class="container_12 clearfix">
+      <div class="grid_12">
+    <p id="success" />
+	        <div class="clear"></div>
+        </div>
+        
+        <div class="block">
+          <div class="grid_6">
+
+
+
+	<%= simple_form_for :user, :url => '/reservaciones' do |f| %>
+
+	  
+	      <%= f.input :nombre %>
+	      <%= f.input :Dirección %>
+	      <%= f.input :Cuidad %>     
+	      <%= f.input :Estado %>
+	      <%= f.input :"Zip Code" %>
+	      <%= f.input :"Cedula" %> 
+	      <%= f.input :Procedencia%>
+	      <%= f.input :Destino %>
+	      <%= f.input :Compania%>
+	      <%= f.input :"Teléfono" %>
+	      <%= f.input :Email %>
+	      <%= f.button :submit, "Enviar" %>
+	    <% end %>
+
+
+           </div>
+
+        </div>
+
+          <div class="grid_6">
+            <h3><%=t :reservaciones_clarion_mayus%></h3>
+        <p> <%=t :texto_reservaciones%> </p>
+            	<h3><%=t :garantia_clarion%></h3>
+
+                <p>* <%=t :texto_garantia_uno%> 
+* <%=t :texto_garantia_dos%>  <br>
+
+* <%=t :texto_garantia_tres%> <br>
+
+* <%=t :texto_garantia_cuatro%></p>
+                <p><strong> <%=t :direccion_clarion%>: </strong>Ave. Circunvalación, San Pedro Sula, Honduras, C.A.</p>
+
+                <p>* Las reservaciones solo podrán garantizarse con una orden de compra, o con un depósito en nuestra cuenta bancaria, o con una autorización de tarjeta de crédito.
+
+* Para ser aceptada, la cancelación de reservaciones deberá hacerse con una antelación mínima de 24 horas antes de la fecha prevista de llegada al hotel.<br>
+
+* Las reservaciones No Show se cobrarán con el 100% del valor de la primera noche de alojamiento.<br>
+
+* Para cualquier consulta o información adicional, por favor contáctenos a través de nuestros teléfonos o e-mail y con mucho gusto le atenderemos de inmediato.</p>
+                <p><strong>Dirección:</strong>Ave. Circunvalación, San Pedro Sula, Honduras, C.A.</p>
+                <div class="separator"></div>
+                <p><strong>PBX:</strong>(504)2553-6070 / 25536071 </p>
+                <p><strong>Fax:</strong>(504)2552-4570</p>
+                <div class="separator"></div>
+                <p><strong>Email:</strong>  reservaciones@hotelclarionsps.com</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+</div><!-- Container End -->
+
+  <div id="bottom">
+
+    <!-- Container 12 End -->
+
+    <div id="footer2" class="container_12">
+ 
+      <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+           <td>  <h4 width= "30"> Plantilla hecha por Francisco Calix y Jorge Padilla </h4> </td>
+           <td WIDTH=75><!-- Facebook Badge START --><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Hotel Clarion San Pedro Sula"></a><br/><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" title="Hotel Clarion San Pedro Sula"><img src="/images/facebook_64.png" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" </a><!-- Facebook Badge END -->   </td>
+<td> <a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Hotel Clarion San Pedro Sula"></a><br/><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" title="Hotel Clarion San Pedro Sula"><img src="/images/twitter_64.png" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" </a> </td>
+        <tr>
+
+         
+
+         
+        </tr>
+
+      </table>
+
+    </div>
+
+  </div>
+
+  <!-- Bottom End -->
+
+</div><!-- Wrapper end -->
+    <!-- Botto
+
+<script type="text/javascript">$('#noscript').remove();</script> 
+</body>

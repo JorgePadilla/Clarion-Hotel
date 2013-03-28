@@ -1,0 +1,2 @@
+module InglesHelper
+end
