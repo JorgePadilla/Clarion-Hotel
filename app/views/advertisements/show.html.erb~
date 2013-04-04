@@ -5,8 +5,8 @@
 <p>
  
 
-<%= image_tag @advertisement.photo.url%>
-holaaa
+<%= image_tag @advertisement.photo.url(:medium)%>
+
 </p>
 
 <p>
@@ -16,4 +16,5 @@ holaaa
 
 
 <%= link_to 'Edit', edit_advertisement_path(@advertisement) %> |
-<%= link_to 'Back', advertisements_path %>
+<%= link_to 'Back to Advertisements', advertisements_path %>
+<%= link_to 'Back to Promociones', promociones_path %>

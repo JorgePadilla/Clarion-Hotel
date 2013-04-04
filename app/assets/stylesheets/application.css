@@ -18,6 +18,12 @@
   margin: 2px 10px;
 }
 
+#user_nav {
+  float: right;
+  font-size: 12px;
+  margin-left: 1500px;
+}
+
 .simple_form div.input {
   margin-bottom: 10px;
 }

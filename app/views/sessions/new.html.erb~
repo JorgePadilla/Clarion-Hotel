@@ -279,7 +279,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
       <div class="wrapper">
         <div class="container_12">
           <div class="grid_12">
-            <h1><%=t :promociones_clarion %></h1>
+            <h1> Sign In</h1>
           </div>
         </div>
         <div class="clear"></div>
@@ -288,18 +288,18 @@ body {background-image:url(images/pattern/ptn-04.png);}
 
   <style type="text/css">
  #prueba {
-left:950px;
+left:1150px;
 position:relative;
 }
 
 #imagen {
-bottom:150px;
+bottom:200px;
 position:relative;
 left:200px
 }
 
 </style>
-http_basic_authenticate_with :name => "hotelclarionsps", :password => "railsapplication"
+
 
   <% if current_user %>
     Logged in as <%= current_user.email %>.
@@ -332,14 +332,6 @@ http_basic_authenticate_with :name => "hotelclarionsps", :password => "railsappl
 
 </div>
 
-<div id="imagen">
-<% @advertisements.each do |advertisement| %>
-
-<%= image_tag advertisement.photo.url(:large) %>
-
-<% end %>
-
-</div>
 
 
   <div id="bottom">
