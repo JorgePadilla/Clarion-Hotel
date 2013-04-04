@@ -540,7 +540,6 @@ html">Honduras</a></li>
                     </li>
                     <li><%= link_to t('galeria_clarion'), galeria_path %></li>
                     <li><%= link_to t('promociones_clarion'), promociones_path %></li>
-                    <li><%= link_to t('galeria_clarion'), galeria_path %></li>
                      <% if t('idioma_clarion') == "English" %>
                          <li><%= link_to t('idioma_clarion'), root_path(:locale => "en") %></li>
                                 <% else %>

@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
 
-before_filter :authenticate
+
 def new
   
   @advertisements = Advertisement.all

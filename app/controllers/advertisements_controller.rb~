@@ -2,7 +2,7 @@ class AdvertisementsController < ApplicationController
   # GET /advertisements
   # GET /advertisements.json
  
-  
+  http_basic_authenticate_with :name => "hotelclarionsps", :password => "railsapplication"
   def index
     @advertisements = Advertisement.all
 

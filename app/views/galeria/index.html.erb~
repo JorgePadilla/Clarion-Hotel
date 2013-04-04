@@ -276,10 +276,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
                       <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
                     </li>
                      <li><%= link_to t('galeria_clarion'), galeria_path %></li>
-<<<<<<< HEAD
                      <li><%= link_to t('promociones_clarion'), promociones_path %></li>
-=======
->>>>>>> 75cfe42f3b0b3d90f68ed26775c8899fb83bf7ae
                     <% if t('idioma_clarion') == "English" %>
                          <li><%= link_to t('idioma_clarion'), galeria_path(:locale => "en") %></li>
                                 <% else %>
