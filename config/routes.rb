@@ -28,6 +28,7 @@ resources :fotos
   resources :habitaciones
   match "instalaciones" => "instalacion#index"
   match "reservaciones"  => "reservacion#index"
+  match "reservaciones_show"  => "reservacion#show"
   get "habitaciones/index"
   match "ingles" => "ingles#index"
   get "home/index"
