@@ -11,6 +11,7 @@
  *= require_self
  *= require_tree .
 */
+
 .simple_form label {
   float: left;
   width: 100px;
@@ -41,7 +42,6 @@
   margin-right: 10px;
   margin-left: 2px;
 }
-
 .simple_form .error {
   clear: left;
   margin-left: 120px;
@@ -58,3 +58,4 @@
   display: block;
   font-style: italic;
 }
+

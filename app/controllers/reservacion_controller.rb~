@@ -1,23 +1,20 @@
 class ReservacionController < ApplicationController
   def index
-<<<<<<< HEAD
-    
+   # flash.now[:notice] = 'Message sent!'
+      @correo=Correo.new
   end
-    
-   
-=======
 
-    flash.now[:notice] = 'Message sent!'
-    UserMailer.registration_confirmation("jp").deliver
-  end
     
     def show
+      @correo=Correo.new(params[:correo])
      
-   
-    ReservacionMailer.registration_confirmation(@user).deliver
-    redirect_to :action => "index", :controller => "home"
+  
+    UserMailer.registration_confirmation(@correo).deliver
+   render 'index'
+   #@hola='hola'
+   #  UserMailer.registration_confirmation("jp").deliver
+   # redirect_to :action => "index", :controller => "home"
   end
    
 
->>>>>>> 75cfe42f3b0b3d90f68ed26775c8899fb83bf7ae
 end
