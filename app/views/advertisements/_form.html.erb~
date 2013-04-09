@@ -1,0 +1,14 @@
+<%= simple_form_for @advertisement, :html => { :multipart => true } do |f| %>
+
+
+
+<%= f.input :descripcion, :input_html => { :maxlength => 450 } %>
+
+<%= f.input_field :photo %>
+<%= f.button :submit %>
+
+ 
+<% end %>
+
+
+
