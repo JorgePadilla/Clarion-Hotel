@@ -263,20 +263,19 @@ body {background-image:url(images/pattern/ptn-04.png);}
             </div>
           <div class="grid_9">
             <ul class="menu sf-menu">
-                </li>
+                 </li>
 
 		    		 <li><%= link_to t('inicio_clarion'), root_path %></li>
 
                     </li>
-                    <li><%= link_to t('habitaciones_clarion'), habitaciones_path %></li>
+                     <li><%= link_to t('habitaciones_clarion'), habitaciones_path %></li>
                     </li>
-                    <li><a href="convenciones.html">Honduras</a></li>
                     <li><%= link_to t('instalaciones_clarion'), instalaciones_path %></li>
-                      <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
+                    <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
                     </li>
-
- 	                <li><%= link_to t('galeria_clarion'), galeria_path %></li>
-                     <li><%= link_to t('promociones_clarion'), promociones_path %></li>
+                    <li><%= link_to t('galeria_clarion'), galeria_path %></li>
+                    <li><%= link_to t('promociones_clarion'), promociones_path %></li>
+                    <li><%= link_to t('aboutus_clarion'), aboutus_path %></li>
 
                     <% if t('idioma_clarion') == "English" %>
                          <li><%= link_to t('idioma_clarion'), instalaciones_path(:locale => "en") %></li>
