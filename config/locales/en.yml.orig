@@ -1,0 +1,95 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  bienvenida_hotel: Welcome to Hotel Clarion San Pedro Sula 
+
+  ubicacion_hotel: It is located in a strategic area just minutes from various destinations of interest within the city and a few hours of the most important cities in Honduras. We offer non-smoking and smoking rooms, Junior Suites, Junior Executive Suites. Each room has air conditioning, desk, plasma TV, fine amenities, hair dryer, queen or king size beds and wireless internet.
+
+  confort_hotel: Guests will enjoy the excellent facilities and amenities, among which include elevator, bar, laundry service, meeting facilities, restaurant, also has recreational and leisure activities, including gym, sauna, playground . In order to provide guests with a memorable stay, this hotel combines the advantages of expert service with all modern comforts.
+
+  habitaciones_clarion: Rooms
+
+  inicio_clarion: Home
+
+  galeria_clarion: Gallery
+
+  nuestras_habitaciones: Our Rooms
+
+  todas_habitaciones: All our rooms have
+
+  confort_clarion: Comfort
+
+  fina_decoracion: Fine Decoration
+
+  reservaciones_clarion: Bookings
+
+  texto_decoracion: All our rooms and suites are tastefully decorated to make your stay an unforgettable experience.
+
+  idioma_clarion: Español
+
+  instalaciones_clarion: Facilities
+
+  gym_clarion: Gym
+
+  restaurante_clarion: Restaurant
+
+  area_juego: Game Room
+
+  centro_negocios: Business center
+
+  eventos_banquetes: Banquets and Events
+
+  bar_clarion: El capitan Bar
+
+  condominios_clarion: Condos
+
+  servicio_domicilio: Home Service
+
+  reservaciones_clarion_mayus: BOOKINGS
+
+  texto_formulario: This form does not guarantee your reservation if you do not receive a confirmation of our reservation agents.
+
+  texto_reservaciones: Make reservations through our telephone, fax or e-mail, or simply fill out the form.
+
+  garantia_clarion: WARRANTY AND CANCELLATIONS
+
+  texto_garantia_uno: Reservations can only be guaranteed with a purchase order, or a deposit in our bank account or a credit card authorization. 
+
+  texto_garantia_dos: To be accepted, the cancellation of reservations must be made with a minimum of 24 hours before the scheduled arrival.
+
+  texto_garantia_tres: No Show reservations will be charged with 100% of the value of the first night's accommodation.
+
+  texto_garantia_cuatro: For any questions or additional information, please contact us through our phone or e-mail and we will gladly assist you immediately.
+
+  direccion_clarion: Address
+
+  nombre_clarion: Name
+
+  ciudad_clarion: City
+
+  estado_clarion: State
+
+  cedula_clarion: Id/Passport
+
+  procedencia_clarion: Location Coming
+
+  destino_clarion: Destination
+
+  compania_clarion: Company
+
+  telefono_clarion: Phone Number
+
+<<<<<<< HEAD
+=======
+  promociones_clarion: Promotions
+
+>>>>>>> 6932b268cf626212a78e7bacbc1e3703ad2dea58
+
+
+
+
+
+  
+
+ 

@@ -1,0 +1,17 @@
+<%= form_for(@habitacione) do |f| %>
+  <% if @habitacione.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@habitacione.errors.count, "error") %> prohibited this habitacione from being saved:</h2>
+
+      <ul>
+      <% @habitacione.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

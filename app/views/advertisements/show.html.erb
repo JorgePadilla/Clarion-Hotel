@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+ 
+
+<%= image_tag @advertisement.photo.url(:medium)%>
+
+</p>
+
+<p>
+  <b>Descripcion ?:</b>
+  <%= @advertisement.descripcion %>
+</p>
+
+
+<%= link_to 'Edit', edit_advertisement_path(@advertisement) %> |
+<%= link_to 'Back to Advertisements', advertisements_path %>   |
+<%= link_to 'Back to Promociones', promociones_path %>
