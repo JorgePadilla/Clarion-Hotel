@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
   def index
-    I18n.locale='espanish'
-    I18n.default_locale='espanish'
+   
   end
 end

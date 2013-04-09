@@ -11,7 +11,8 @@ Logged in as <%= current_user.email %>.
 <% @advertisements.each do |advertisement| %>
   <tr>
     <td><%= image_tag advertisement.photo.url(:medium) %></td>
-    <td><%= link_to 'Show', advertisement %></td>   ||
+    <td><%= link_to 'Show', advertisement %></td>  
+<td>  ||  </td>
     <td><%= link_to 'Edit', edit_advertisement_path(advertisement) %></td>
 
   </tr>
@@ -26,6 +27,6 @@ Logged in as <%= current_user.email %>.
 
 
 
-
+<%= link_to "Nuevo", new_advertisements_path %>
 
 

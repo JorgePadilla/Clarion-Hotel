@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130404091436) do
+ActiveRecord::Schema.define(:version => 20130405212425) do
 
   create_table "advertisements", :force => true do |t|
     t.string   "descripcion"
@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(:version => 20130404091436) do
     t.datetime "photo_updated_at"
   end
 
-<<<<<<< HEAD
   create_table "correos", :force => true do |t|
     t.string   "nombre"
     t.string   "direccion"
@@ -41,8 +40,6 @@ ActiveRecord::Schema.define(:version => 20130404091436) do
     t.string   "correo"
   end
 
-=======
->>>>>>> d3233a55f5f3b5ef07e2c113afd11afc8baa1a6a
   create_table "englishes", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -63,6 +60,14 @@ ActiveRecord::Schema.define(:version => 20130404091436) do
   end
 
   create_table "ingles", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "locations", :force => true do |t|
+    t.string   "address"
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
