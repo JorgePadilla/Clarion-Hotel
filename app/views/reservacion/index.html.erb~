@@ -405,8 +405,7 @@ html">Honduras</a></li>
 	      <%= f.input :cuidad %>     
 	      <%= f.input :estado %>
 	      <%= f.input :zip %>
-	      <%= f.input :identidad %> 
-	      <%= f.input :procedencia %>
+	      <%= f.input :identidad %>
 	      <%= f.input :compania %>
 	      <%= f.input :telefono %>
 	      <%= f.input :correo %>
