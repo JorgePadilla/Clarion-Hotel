@@ -404,7 +404,16 @@ body {background-image:url(images/pattern/ptn-04.png);}
 	      <%= f.input :fechaingreso %> 
 	      <%= f.input :fechasalida %> 
 	      <%= f.input :personas %> 
-	      <%= f.input :tipo, collection: ["Sencilla","Doble","Jr Suite","Suite Ejecutiva"], :include_blank => false%> 
+	      
+	  
+	       <% if t('idioma_clarion') == "English" %>
+                        <%= f.input :tipo, collection: ["Sencilla","Doble","Jr Suite","Suite Ejecutiva"], :include_blank => false%>   
+               <% else %>
+			
+			 <%= f.input :tipo, collection: ["Simple","Double","Jr Suite","Executive Suite"], :include_blank => false%>
+               <% end %>    
+	      
+	      
 	      <%= f.input :cuidad %>    
 	      <%= f.input :identidad %>
 	      <%= f.input :compania %>
