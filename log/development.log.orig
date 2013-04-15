@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
 Migrating to CreateHabitaciones (20120326001854)
 Migrating to CreateEnglishes (20130308045824)
@@ -2098,3 +2099,5 @@ Served asset /logo.png - 304 Not Modified (0ms)
 =======
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
 >>>>>>> 1dd95ee89517b7debcab74fa4b2edb1314925bcc
+=======
+>>>>>>> e216757e4df8c20950a70eb721871e8cfe667ff0

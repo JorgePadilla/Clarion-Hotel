@@ -12,6 +12,7 @@
 <link href="style.css" rel="stylesheet" type="text/css" /> 
 <link href="css/colorbox.css" rel="stylesheet" type="text/css" /> 
 <link href="css/plusslider.css" rel="stylesheet" />
+<link href="css/reservacion.css" rel="stylesheet" />
 <link href="css/superfish.css" rel="stylesheet" />
 <link id="google_font" href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:light,regular' rel='stylesheet' type='text/css' />
 <!-- fallback if js not enabled //-->
@@ -353,20 +354,19 @@ body {background-image:url(images/pattern/ptn-04.png);}
             <div class="grid_9">
               <ul class="menu sf-menu">
 
-                    </li>
+                     </li>
 
 		    		 <li><%= link_to t('inicio_clarion'), root_path %></li>
 
                     </li>
                      <li><%= link_to t('habitaciones_clarion'), habitaciones_path %></li>
                     </li>
-                    <li><a href="convenciones.
-html">Honduras</a></li>
                     <li><%= link_to t('instalaciones_clarion'), instalaciones_path %></li>
-                 <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
+                    <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
                     </li>
                     <li><%= link_to t('galeria_clarion'), galeria_path %></li>
                     <li><%= link_to t('promociones_clarion'), promociones_path %></li>
+                    <li><%= link_to t('aboutus_clarion'), aboutus_path %></li>
              
                      <% if t('idioma_clarion') == "English" %>
                          <li><%= link_to t('idioma_clarion'), reservaciones_path(:locale => "en") %></li>
@@ -401,10 +401,19 @@ html">Honduras</a></li>
 
 	<%= simple_form_for @correo, :url => '/reservaciones_show' do |f| %>  
 	      <%= f.input :nombre %>
-	      <%= f.input :direccion %>
-	      <%= f.input :cuidad %>     
-	      <%= f.input :estado %>
-	      <%= f.input :zip %>
+	      <%= f.input :fechaingreso %> 
+	      <%= f.input :fechasalida %> 
+	      <%= f.input :personas %> 
+	      
+	  
+	       <% if t('idioma_clarion') == "English" %>
+                         <%= f.input :tipo, collection: ["Simple","Double","Jr Suite","Executive Suite"], :include_blank => false%>
+               <% else %>
+			 <%= f.input :tipo, collection: ["Sencilla","Doble","Jr Suite","Suite Ejecutiva"], :include_blank => false%> 
+               <% end %>    
+	      
+	      
+	      <%= f.input :cuidad %>    
 	      <%= f.input :identidad %>
 	      <%= f.input :compania %>
 	      <%= f.input :telefono %>
@@ -420,9 +429,7 @@ for (var ii=0; ii < elements.length; ii++) {
 	    <% end %>
 
 
-           </div>
-
-        </div>
+           </div></div>
 
           <div class="grid_6">
             <h3><%=t :reservaciones_clarion_mayus%></h3>
@@ -430,24 +437,15 @@ for (var ii=0; ii < elements.length; ii++) {
             	<h3><%=t :garantia_clarion%></h3>
 
                 <p>* <%=t :texto_garantia_uno%> 
-* <%=t :texto_garantia_dos%>  <br>
+* <%=t :texto_garantia_dos%>  <br>  <br>
 
-* <%=t :texto_garantia_tres%> <br>
+* <%=t :texto_garantia_tres%> <br>  <br>
 
 * <%=t :texto_garantia_cuatro%></p>
                 <p><strong> <%=t :direccion_clarion%>: </strong>Ave. Circunvalación, San Pedro Sula, Honduras, C.A.</p>
-
-                <p>* Las reservaciones solo podrán garantizarse con una orden de compra, o con un depósito en nuestra cuenta bancaria, o con una autorización de tarjeta de crédito.
-
-* Para ser aceptada, la cancelación de reservaciones deberá hacerse con una antelación mínima de 24 horas antes de la fecha prevista de llegada al hotel.<br>
-
-* Las reservaciones No Show se cobrarán con el 100% del valor de la primera noche de alojamiento.<br>
-
-* Para cualquier consulta o información adicional, por favor contáctenos a través de nuestros teléfonos o e-mail y con mucho gusto le atenderemos de inmediato.</p>
-                <p><strong>Dirección:</strong>Ave. Circunvalación, San Pedro Sula, Honduras, C.A.</p>
                 <div class="separator"></div>
-                <p><strong>PBX:</strong>(504)2553-6070 / 25536071 </p>
-                <p><strong>Fax:</strong>(504)2552-4570</p>
+                <p><strong>PBX:</strong> (504)2553-6070 / 25536071 </p>
+                <p><strong>Fax:</strong> (504)2552-4570</p>
                 <div class="separator"></div>
                 <p><strong>Email:</strong>  reservaciones@hotelclarionsps.com</p>
             </div>
@@ -465,7 +463,7 @@ for (var ii=0; ii < elements.length; ii++) {
       <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
            <td>  <h4 width= "30"> Plantilla hecha por Francisco Calix y Jorge Padilla </h4> </td>
            <td WIDTH=75><!-- Facebook Badge START --><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Hotel Clarion San Pedro Sula"></a><br/><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" title="Hotel Clarion San Pedro Sula"><img src="/images/facebook_64.png" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" </a><!-- Facebook Badge END -->   </td>
-<td> <a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Hotel Clarion San Pedro Sula"></a><br/><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" title="Hotel Clarion San Pedro Sula"><img src="/images/twitter_64.png" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" </a> </td>
+
         <tr>
 
          

@@ -3,9 +3,10 @@ en:
     labels:
       correo:
         nombre: 'Name'
-        direccion:  'Address'
-        cuidad: 'City' 
-        estado: 'State'
+        cuidad: 'City'
+        fechaingreso: 'Join Date'
+        fechasalida: 'Departure Date'
+        personas: 'People'
         identidad: 'Id No.'
         compania:  'Company'
         telefono:  'Telephone'
