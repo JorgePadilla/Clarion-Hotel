@@ -37,7 +37,7 @@ $(document).ready(function() {
     $('#parallax li').parallax(
 	{mouseport: $('#parallax')}, {xparallax: '100px', yparallax: '30px'}, {xparallax: '300px', yparallax: '50px'}, {xparallax: '150px', yparallax: '30px'}, {xparallax: '250px', yparallax: '70px'}
 	);
-	
+
 	$('#faqs h3').each(function() {
 		var tis = $(this), state = false, answer = tis.next('div').hide().css('height','auto').slideUp();
 		tis.prepend("<span>+</span> ")
@@ -347,7 +347,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
        	    <div class="mainbody">
        	      <div class="maincontent">
        	        <h3> <%=t :area_juego%></h3>
-       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/area_de_juego.jpg" />Area de juego texto</p>
+       	        <p><%= image_tag "area_de_juego.jpg", :width => 290, :height => 135, :class => "shadow", :style => "margin-left = 0px", :onclick => "javascript:window.open('salajuegos','popup','width=600,height=400');" %> Area de juego texto</p>
        	        <h3>Sauna</h3>
        	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/sauna.jpg" />Texto.</p>
                 <h3> <%=t :servicio_domicilio%></h3>
