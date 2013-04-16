@@ -13,7 +13,7 @@
 <link href="css/colorbox.css" rel="stylesheet" type="text/css" /> 
 <link href="css/plusslider.css" rel="stylesheet" />
 <link href="css/superfish.css" rel="stylesheet" />
-<link id="google_font" href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:light,regular' rel='stylesheet' type='text/css' />
+<link href="css/google_font.css" rel="stylesheet" />
 <!-- fallback if js not enabled //-->
 <link href="css/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" /> 
 <!-- CSS End //-->
@@ -310,11 +310,12 @@ body {background-image:url(images/pattern/ptn-04.png);}
 <div class="grid_13">
 				<div class="mainbody">
                   <div class="maincontent">
-                    <h3> <%=t :gym_clarion%></h3>
-<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/gimnasio.jpg" /> Texto.
+                    <h3> <%=t :restaurante_clarion%></h3>
+<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/restaurante.jpg" onclick= "javascript:window.open('salajuegos','popup','width=600,height=600,status=0,menubar=0,location=0,resizable=0');" /></p> 
 <br>
+.
 <br>
-</p><h<br>
+
 
 
 <h3> <%=t :centro_negocios%></h3>
@@ -347,7 +348,23 @@ body {background-image:url(images/pattern/ptn-04.png);}
        	    <div class="mainbody">
        	      <div class="maincontent">
        	        <h3> <%=t :area_juego%></h3>
-       	        <p><%= image_tag "area_de_juego.jpg", :width => 290, :height => 135, :class => "shadow", :style => "margin-left = 0px", :onclick => "javascript:window.open('salajuegos','popup','width=600,height=600');" %> Area de juego texto</p>
+       	        <p><%= image_tag "area_de_juego.jpg", :width => 290, :height => 135, :class => "shadow", :style => "margin-left = 0px", :onclick => "javascript:window.open('salajuegos','popup','width=600,height=600,status=0,menubar=0,location=0');" %> Area de juego texto</p>
+<script type="text/javascript">
+function popup(pageURL, title, popupWidth, popupHeight) 
+    {
+        var left = (screen.width / 2) - (popupWidth / 2);
+        var top = (screen.height / 2) - (popupHeight / 2);
+        var targetPop = window.open(pageURL, title, 'toolbar=no, location=no, directories=no, 
+status=no, menubar=no, scrollbars=YES, resizable=YES, copyhistory=no, width=' + popupWidth + ', 
+height=' + popupHeight + ', top=' + top + ', left=' + left);
+    }
+</script>
+<a href="javascript:void(0);" onclick="popup('areajuegos', 
+'googlePopup',700,600);">OPEN GOOGLE</a>
+
+
+
+
        	        <h3>Sauna</h3>
        	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/sauna.jpg" />Texto.</p>
                 <h3> <%=t :servicio_domicilio%></h3>

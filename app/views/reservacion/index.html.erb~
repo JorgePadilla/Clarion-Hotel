@@ -407,9 +407,10 @@ body {background-image:url(images/pattern/ptn-04.png);}
 	      
 	  
 	       <% if t('idioma_clarion') == "English" %>
-                         <%= f.input :tipo, collection: ["Simple","Double","Jr Suite","Executive Suite"], :include_blank => false%>
+                        <%= f.input :tipo, collection: ["Sencilla","Doble","Jr Suite","Suite Ejecutiva"], :include_blank => false%>   
                <% else %>
-			 <%= f.input :tipo, collection: ["Sencilla","Doble","Jr Suite","Suite Ejecutiva"], :include_blank => false%> 
+			
+			 <%= f.input :tipo, collection: ["Simple","Double","Jr Suite","Executive Suite"], :include_blank => false%>
                <% end %>    
 	      
 	      
