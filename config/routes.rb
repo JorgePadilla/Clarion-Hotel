@@ -1,6 +1,8 @@
 Clarion::Application.routes.draw do
 
 
+  get "otros/index"
+
   get "aboutus/index"
 
   get "promociones/index"
@@ -37,7 +39,7 @@ resources :fotos
   match "ingles" => "ingles#index"
   get "home/index"
   match "galeria" => "galeria#index"
-
+  match "otros" => "otros#index"
 
 
  match "sign_up" => "users#new"
@@ -46,7 +48,7 @@ match "log_out" => "sessions#destroy"
 match "upload" => "fotos#upload"
 match "promociones" => "promociones#index"
 match "aboutus" => "aboutus#index"
-
+match "salajuegos" => "instalacion#salajuegos"
 
    root :to => 'home#index'
   

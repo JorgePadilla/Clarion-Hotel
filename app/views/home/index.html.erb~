@@ -29,7 +29,7 @@
 <!--<link href="css/superfish.css" rel="stylesheet" />-->
 
 
-<link id="google_font" href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:light,regular' rel='stylesheet' type='text/css' /> 
+<link href="css/google_font.css" rel="stylesheet" />
 
 <!-- fallback if js not enabled //-->
 
@@ -533,13 +533,13 @@ body {background-image:url(images/pattern/ptn-04.png);}
                     </li>
                      <li><%= link_to t('habitaciones_clarion'), habitaciones_path %></li>
                     </li>
-                    <li><a href="convenciones.
-html">Honduras</a></li>
                     <li><%= link_to t('instalaciones_clarion'), instalaciones_path %></li>
                     <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
                     </li>
                     <li><%= link_to t('galeria_clarion'), galeria_path %></li>
                     <li><%= link_to t('promociones_clarion'), promociones_path %></li>
+                    <li><%= link_to t('aboutus_clarion'), aboutus_path %></li>
+                    
                      <% if t('idioma_clarion') == "English" %>
                          <li><%= link_to t('idioma_clarion'), root_path(:locale => "en") %></li>
                                 <% else %>
@@ -579,12 +579,30 @@ html">Honduras</a></li>
 
             </div>
 
-            <div class="slide6">
+            <div class="slide4">
 
                 <img src="images/slides/slide4.jpg" alt="Demo Slide" />
 
             </div>
 
+             <div class="slide6">
+
+                <img src="images/slides/slide5.jpg" alt="Demo Slide" />
+
+            </div>
+ 
+
+                   <div class="slide6">
+
+                <img src="images/slides/slide6.jpg" alt="Demo Slide" />
+
+            </div>
+
+       <div class="slide6">
+
+                <img src="images/slides/slide7.jpg" alt="Demo Slide" />
+
+            </div>
 		</div><!-- Slider Container End -->
 
         
@@ -691,22 +709,14 @@ ta
 
     <div class="block">
 
-<div class="grid_6">
+<div>
 
                 <h2 class="title"> <%=t :bienvenida_hotel %> </h2>
                 <p> <%=t :ubicacion_hotel %></p>
 
         	</div>
 
-<div class="grid_6">
 
-
-  <h2 class="title">Confort</h2>
-
-
- <p> <%=t :confort_hotel %></p>
-
-</div>
 
     </div><!-- Block End --><!-- Block End -->
 

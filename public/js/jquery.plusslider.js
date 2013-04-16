@@ -114,7 +114,7 @@
                         // Don't animate while animated
                         if(!base.$slides.is(':animated')){
                             $this.addClass('current').siblings().removeClass('current');
-                            base.$slides.eq($this.attr('rel')).siblings().css('zIndex', 50).removeClass('current');
+                            base.$slides.eq($this.attr('rel')).siblings().css('zIndex', 500).removeClass('current');
                             base.$slides.eq($this.attr('rel')).css('zIndex', 100).addClass('current').fadeIn(base.options.speed, function(){
                                 base.$slides.not('.current').hide();
                             });
@@ -327,8 +327,8 @@
         paginationBefore: false, // Place the pagination above the slider within the HTML
         paginationWidth: true, // Automatically gives the pagination a dynamic width
 		
-        displayTime: 4000, // The amount of time the slide waits before automatically moving on to the next one. This requires 'autoPlay: true'
-        speed: 500, // The amount of time it takes for a slide to fade into another slide
+        displayTime: 500, // The amount of time the slide waits before automatically moving on to the next one. This requires 'autoPlay: true'
+        speed: 200, // The amount of time it takes for a slide to fade into another slide
 		
 	autoPlay: true, // Creats a times, looped 'slide-show'
         keyboardNavigation: true, // The keyboard's directional left and right arrows function as next and previous buttons
