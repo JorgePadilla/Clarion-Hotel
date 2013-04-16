@@ -9,7 +9,6 @@
   
 <!-- CSS Start //--> 
 <link rel="shortcut icon" href="images/favicon.png" /> 
-<link href="style.css" rel="stylesheet" type="text/css" /> 
 <link href="css/colorbox.css" rel="stylesheet" type="text/css" /> 
 <link href="css/plusslider.css" rel="stylesheet" />
 <link href="css/reservacion.css" rel="stylesheet" />
@@ -31,7 +30,6 @@
 <script type="text/javascript" src="js/jquery.twitter.js"></script>
 <script type="text/javascript" src="js/jquery.supersubs.js"></script>
 <script type="text/javascript" src="js/jquery.superfish.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
 <script type="text/javascript" src="js/functions.js"></script> 
 <!-- JS End //--> 
 <script type="text/javascript">
@@ -407,9 +405,10 @@ body {background-image:url(images/pattern/ptn-04.png);}
 	      
 	  
 	       <% if t('idioma_clarion') == "English" %>
-                         <%= f.input :tipo, collection: ["Simple","Double","Jr Suite","Executive Suite"], :include_blank => false%>
+                        <%= f.input :tipo, collection: ["Sencilla","Doble","Jr Suite","Suite Ejecutiva"], :include_blank => false%>   
                <% else %>
-			 <%= f.input :tipo, collection: ["Sencilla","Doble","Jr Suite","Suite Ejecutiva"], :include_blank => false%> 
+			
+			 <%= f.input :tipo, collection: ["Simple","Double","Jr Suite","Executive Suite"], :include_blank => false%>
                <% end %>    
 	      
 	      
