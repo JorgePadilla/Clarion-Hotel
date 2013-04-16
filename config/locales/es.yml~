@@ -3,7 +3,7 @@ es:
 
   ubicacion_hotel2: 
 
-  confort_hotel: Los huéspedes disfrutarán de las excelentes comodidades y servicios del hotel, entre los que se incluye ascensor, bar, servicio de lavandería, salón de actos, restaurante, también cuenta con servicios recreativos y de entretenimiento de categoría, incluyendo gimnasio, sauna, área de juegos. Con el fin de ofrecer a los huéspedes una estancia memorable, este hotel une las ventajas de un servicio experto con las comodidades más novedosas. "al presentar tu tarjeta taca distancia, acumula 500 millas x estadía".
+  confort_hotel: Los huéspedes disfrutarán de las excelentes comodidades y servicios del hotel, entre los que se incluye ascensor, bar, servicio de lavandería, salón de actos, restaurante, también cuenta con servicios recreativos y de entretenimiento de categoría, incluyendo gimnasio y sauna. Con el fin de ofrecer a los huéspedes una estancia memorable, este hotel une las ventajas de un servicio experto con las comodidades más novedosas.
 
   habitaciones_clarion: Habitaciones
 
@@ -81,7 +81,6 @@ es:
 
   ubicacion_hotel: Creemos en la calidad de nuestros servicios y atención como nuestra mayor garantía y fuente de satisfacción hacia usted, por eso deseamos que se sienta con la mayor confianza hacia nosotros y tenga la seguridad de que ha hecho una buena y segura elección. Seguimos trabajando para ofrecerle el mejor hospedaje de San Pedro Sula.
 
-<<<<<<< HEAD
   aboutus_clarion: Sobre Nosotros
   
   parrafo1: Creemos en la calidad de nuestros servicios y atención como nuestra mayor garantía y fuente de satisfacción hacia usted, por eso deseamos que se sienta con la mayor confianza hacia nosotros y tenga la seguridad de que ha hecho una buena y segura elección. Seguimos trabajando para ofrecerle el mejor hospedaje de San Pedro Sula.
@@ -102,6 +101,9 @@ es:
   
   texto_vision: Lograr la preferencia y satisfacción de nuestros clientes, posicionándonos como uno de los mejors hoteles en San Pedro Sula.
   
+  valores: Valores
+  
+  nuestra_ubicacion: Nuestra Ubicación
   date:
     abbr_day_names:
     - dom
@@ -302,8 +304,6 @@ es:
       <<: *errors
 
 
-=======
->>>>>>> 22ed0fc1b2f8d65931321fd99de081b73490ac63
 
 
 
