@@ -14,6 +14,7 @@
 <link href="css/plusslider.css" rel="stylesheet" />
 <link href="css/superfish.css" rel="stylesheet" />
 <link href="css/google_font.css" rel="stylesheet" />
+
 <!-- fallback if js not enabled //-->
 <link href="css/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" /> 
 <!-- CSS End //-->
@@ -31,6 +32,8 @@
 <script type="text/javascript" src="js/jquery.supersubs.js"></script>
 <script type="text/javascript" src="js/jquery.superfish.js"></script>
 <script type="text/javascript" src="js/functions.js"></script> 
+<script type="text/javascript" src="js/popover.js"</script>
+		
 <!-- JS End //--> 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -288,6 +291,24 @@ body {background-image:url(images/pattern/ptn-04.png);}
           <div class="clear"></div>
         </div>
     </div><!--Header End -->
+
+
+    <script type="text/javascript">
+
+        <!--
+
+        function myPopup2(href) {
+
+            window.open( href, "myWindow",
+
+            "status = 1, height = 700, width = 600, resizable = no, left = 700" )
+
+        }
+
+        //-->
+
+    </script>
+
     
   <div id="pagetitle">
     	<div class="wrapper">
@@ -310,13 +331,14 @@ body {background-image:url(images/pattern/ptn-04.png);}
 <div class="grid_13">
 				<div class="mainbody">
                   <div class="maincontent">
+		
+	
                     <h3> <%=t :restaurante_clarion%></h3>
-<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/restaurante.jpg" onclick= "javascript:window.open('salajuegos','popup','width=600,height=600,status=0,menubar=0,location=0,resizable=0');" /></p> 
+<p><img width="290" height="135" id="ex7a" class="shadow" style="margin-left: 100px; float: left" alt=".shadow css class" src="images/restaurante.jpg" onclick= "myPopup2('salajuegos')" /></p> 
 <br>
 .
 <br>
-
-
+	 
 
 <h3> <%=t :centro_negocios%></h3>
 <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/centro_de_negocios.jpg" /> Texto </p>
@@ -359,7 +381,7 @@ status=no, menubar=no, scrollbars=YES, resizable=YES, copyhistory=no, width=' + 
 height=' + popupHeight + ', top=' + top + ', left=' + left);
     }
 </script>
-<a href="javascript:void(0);" onclick="popup('areajuegos', 
+<a href="javascript:void(0);" onclick="popup('salajuegos', 
 'googlePopup',700,600);">OPEN GOOGLE</a>
 
 
