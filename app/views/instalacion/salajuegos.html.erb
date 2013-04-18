@@ -332,9 +332,12 @@ right:auto;
 	   </div>
 	 </div>
 <div class="grid_6">
-          <script>
+        <script>
             Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-            Galleria.run('#galleria');
+            
+            $('#galleria').galleria({
+               autoplay:1000
+             });
         </script>  
 </div>
 <div class="grid_6">
