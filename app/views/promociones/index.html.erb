@@ -301,22 +301,6 @@ position:relative;
   <% if current_user %>
     Logged in as <%= current_user.email %>.
     <%= link_to "Log out", log_out_path %>
-<style type="text/css">
-   #imagen {
-bottom:1px;
-position:relative;
-left:200px;
-}
-
-   #tabla {
-bottom:1px;
-position:relative;
-left:200px;
-}
-  
-
-
-</style>
 
   <% else %>
 <style type="text/css">
@@ -343,20 +327,30 @@ right:auto;
 <% end %>
 
 
-
-
 <% @advertisements.each do |advertisement| %>
-<div id="imagen">
 
-
-<%= image_tag advertisement.photo.url(:large) %>
-
-
-</div>
 <% end %>
 
 
+<script src="galleria/galleria-1.2.9.min.js"></script>
+<style>
+    #galleria{ width: 800px; height: 400px; background-color: #000; margin-left: auto; margin-right: auto; }
+</style>
 
+
+
+ <div id="galleria">
+            <img src="images/fotospromociones/1.jpg">
+            <img src="images/fotospromociones/2.jpg">
+            <img src="images/fotospromociones/3.jpg">
+            <img src="images/fotospromociones/4.jpg">
+        </div>
+
+
+<script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('#galleria');
+        </script>
 
   <div id="bottom">
       <!-- Container 12 End -->
