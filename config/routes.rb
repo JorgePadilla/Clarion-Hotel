@@ -1,6 +1,8 @@
 Clarion::Application.routes.draw do
 
 
+  get "instalacion/bar"
+
   get "otros/index"
 
   get "aboutus/index"
@@ -48,8 +50,12 @@ match "log_out" => "sessions#destroy"
 match "upload" => "fotos#upload"
 match "promociones" => "promociones#index"
 match "aboutus" => "aboutus#index"
-match "salajuegos" => "instalacion#salajuegos"
-
+match "restaurante" => "instalacion#salajuegos"
+match "bar" => "instalacion#bar"
+match "gym" => "instalacion#gym"
+match "negocios" => "instalacion#negocios"
+match "eventos" => "instalacion#eventos"
+match "condominios" => "instalacion#condominios"
    root :to => 'home#index'
   
   # The priority is based upon order of creation:

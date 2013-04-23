@@ -712,7 +712,7 @@ ta
 <div>
 
                 <h2 class="title"> <%=t :bienvenida_hotel %> </h2>
-                <p> <%=t :ubicacion_hotel %></p>
+                <p> <%=t :confort_hotel %></p>
 
         	</div>
 

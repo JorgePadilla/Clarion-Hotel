@@ -14,6 +14,7 @@
 <link href="css/plusslider.css" rel="stylesheet" />
 <link href="css/superfish.css" rel="stylesheet" />
 <link href="css/google_font.css" rel="stylesheet" />
+
 <!-- fallback if js not enabled //-->
 <link href="css/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" /> 
 <!-- CSS End //-->
@@ -31,6 +32,8 @@
 <script type="text/javascript" src="js/jquery.supersubs.js"></script>
 <script type="text/javascript" src="js/jquery.superfish.js"></script>
 <script type="text/javascript" src="js/functions.js"></script> 
+<script type="text/javascript" src="js/popover.js"</script>
+		
 <!-- JS End //--> 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -288,6 +291,40 @@ body {background-image:url(images/pattern/ptn-04.png);}
           <div class="clear"></div>
         </div>
     </div><!--Header End -->
+
+
+    <script type="text/javascript">
+
+        <!--
+
+        function myPopup2(href) {
+
+            window.open( href, "myWindow",
+
+            "status = 1, height = 700, width = 600, resizable = no, left = 700" )
+
+        }
+
+        //-->
+
+    </script>
+
+    <script type="text/javascript">
+
+        <!--
+
+        function myPopup3(href) {
+
+            window.open( href, "myWindow",
+
+            "status = 1, height = 250, width = 500, resizable = no, left = 700" )
+
+        }
+
+        //-->
+
+    </script>
+
     
   <div id="pagetitle">
     	<div class="wrapper">
@@ -310,18 +347,18 @@ body {background-image:url(images/pattern/ptn-04.png);}
 <div class="grid_13">
 				<div class="mainbody">
                   <div class="maincontent">
+		
+	
                     <h3> <%=t :restaurante_clarion%></h3>
-<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/restaurante.jpg" onclick= "javascript:window.open('salajuegos','popup','width=600,height=600,status=0,menubar=0,location=0,resizable=0');" /></p> 
+<p><img width="290" height="135" id="ex7a" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/restaurante.jpg" onclick= "myPopup2('restaurante')" /></p> 
 <br>
 .
 <br>
-
-
+	 
 
 <h3> <%=t :centro_negocios%></h3>
-<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/centro_de_negocios.jpg" /> Texto </p>
-<h3> <%=t :bar_clarion%></h3>
-<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/bar.jpg" />Texto.</p>
+<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/centro_de_negocios.jpg" onclick= "myPopup2('negocios')" />  </p>
+
 
                   </div>
                   <!-- Maincontent end -->
@@ -330,15 +367,14 @@ body {background-image:url(images/pattern/ptn-04.png);}
        	  <div class="grid_13">
        	    <div class="mainbody">
        	      <div class="maincontent">
-       	        <h3> <%=t :restaurante_clarion%></h3>
-       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/restaurante.jpg" />TExto.</p>
+       	        <h3> Bar </h3>
+       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/bar.jpg" onclick = "myPopup2('bar')" /></p>.
        	       <h3> <%=t :eventos_banquetes%></h3>
-       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/eventos.jpg" />texto.
+       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/eventos.jpg" onclick= "myPopup2('eventos')"/>
                 <br>
 <br>
                 </p>
-                 <h3> <%=t :condominios_clarion%></h3>
-       	        <p><img src="images/condominios.jpg" alt=".shadow css class" width="290" height="135" border="0" class="shadow" style="margin-left: 0px; float: left" />Texto.</p>
+                 
    	          </div>
        	      <!-- Maincontent end -->
    	        </div>
@@ -347,28 +383,14 @@ body {background-image:url(images/pattern/ptn-04.png);}
        	  <div class="grid_13">
        	    <div class="mainbody">
        	      <div class="maincontent">
-       	        <h3> <%=t :area_juego%></h3>
-       	        <p><%= image_tag "area_de_juego.jpg", :width => 290, :height => 135, :class => "shadow", :style => "margin-left = 0px", :onclick => "javascript:window.open('salajuegos','popup','width=600,height=600,status=0,menubar=0,location=0');" %> Area de juego texto</p>
-<script type="text/javascript">
-function popup(pageURL, title, popupWidth, popupHeight) 
-    {
-        var left = (screen.width / 2) - (popupWidth / 2);
-        var top = (screen.height / 2) - (popupHeight / 2);
-        var targetPop = window.open(pageURL, title, 'toolbar=no, location=no, directories=no, 
-status=no, menubar=no, scrollbars=YES, resizable=YES, copyhistory=no, width=' + popupWidth + ', 
-height=' + popupHeight + ', top=' + top + ', left=' + left);
-    }
-</script>
-<a href="javascript:void(0);" onclick="popup('areajuegos', 
-'googlePopup',700,600);">OPEN GOOGLE</a>
+       	        <h3> Gym / Sauna </h3>
+<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/gimnasio.jpg" onclick= "myPopup2('gym')"/></p>.
 
 
 
-
-       	        <h3>Sauna</h3>
-       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/sauna.jpg" />Texto.</p>
-                <h3> <%=t :servicio_domicilio%></h3>
-       	        <p><img src="images/domicilio.jpg" alt=".shadow css class" width="290" height="135" border="0" class="shadow" style="margin-left: 0px; float: left" /></a>TExto.</p>
+       	        <h3><%=t :condominios_clarion%></h3>
+       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/logo.png" onclick= "myPopup3('condominios')" /></p>
+                
    	          </div>
        	      <!-- Maincontent end -->
    	        </div>
