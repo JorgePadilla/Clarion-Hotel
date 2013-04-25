@@ -1,5 +1,5 @@
 es:
-  bienvenida_hotel: Bienvenidos al Hotel Clarion San Pedro Sula
+  bienvenida_hotel: Bienvenidos a Hotel Clarion San Pedro Sula
 
   ubicacion_hotel2: 
 
@@ -17,9 +17,13 @@ es:
   
   todas_habitaciones: Todas nuestras habitaciones cuentan con
 
+<<<<<<< HEAD
   confort_clarion: Confort
   
   confort_texto: Le ofrecemos muchos servicios y comodidades para que se sienta como en casa, y pueda mantenerse en contacto con sus amigos y su familia.
+=======
+  confort_clarion: Comfort
+>>>>>>> 69f3cc38a64cbfcef1ad64ec968c60b4e282ecba
 
   fina_decoracion: Fina Decoracion
 

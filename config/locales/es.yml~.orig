@@ -1,9 +1,9 @@
 es:
-  bienvenida_hotel: Bienvenidos al Hotel Clarion San Pedro Sula
+  bienvenida_hotel: Bienvenidos a Hotel Clarion San Pedro Sula
 
   ubicacion_hotel2: 
 
-  confort_hotel: Los huéspedes disfrutarán de las excelentes comodidades y servicios del hotel, entre los que se incluye ascensor, bar, servicio de lavandería, salón de actos, restaurante, también cuenta con servicios recreativos y de entretenimiento de categoría, incluyendo gimnasio, sauna, área de juegos. Con el fin de ofrecer a los huéspedes una estancia memorable, este hotel une las ventajas de un servicio experto con las comodidades más novedosas. "al presentar tu tarjeta taca distancia, acumula 500 millas x estadía".
+  confort_hotel: Los huéspedes disfrutarán de las excelentes comodidades y servicios del hotel, entre los que se incluye ascensor, bar, servicio de lavandería, salón de actos, restaurante, también cuenta con servicios recreativos y de entretenimiento de categoría, incluyendo gimnasio y sauna. Con el fin de ofrecer a los huéspedes una estancia memorable, este hotel une las ventajas de un servicio experto con las comodidades más novedosas.
 
   habitaciones_clarion: Habitaciones
 
@@ -12,14 +12,24 @@ es:
   galeria_clarion: Galeria
 
   nuestras_habitaciones: Nuestras Habitaciones
-
+  
+  nuestras_texto: Todas nuestras comodas,relajantes y lujosas habitaciones han sido decoradas con el mejor gusto para hacer de cada estancia una experiencia inolvidable y así sobrepasar las expectativas de nuestros huéspedes,cuentan con finas amenidades para hacer de su estadia unica, entre ellas, Aire acondicionado, TV de 32 con cable, acceso a internet inalambrico de alta velocidad, escritorio de trabajo, amplios baños con ducha y secadora. El huesped tiene como cortesia el cafe y el agua dentro de la habitacion. El Hotel cuenta con seguridad las 24 horas y camaras de vigilancias en todas sus areas.
+  
   todas_habitaciones: Todas nuestras habitaciones cuentan con
 
+<<<<<<< HEAD
   confort_clarion: Confort
+  
+  confort_texto: Le ofrecemos muchos servicios y comodidades para que se sienta como en casa, y pueda mantenerse en contacto con sus amigos y su familia.
+=======
+  confort_clarion: Comfort
+>>>>>>> 69f3cc38a64cbfcef1ad64ec968c60b4e282ecba
 
   fina_decoracion: Fina Decoracion
 
   reservaciones_clarion: Reservaciones
+  
+  reservaciones_texto: Dirección, Avenida Circunvalación 2 Calle, S.O. Bo. Rio de piedras. San Pedro Sula, Cortés, Honduras
 
   texto_decoracion: Todas nuestras habitaciones y Suites están finamente decoradas, para hacer de su estadía una experiencia inolvidable.
 
@@ -81,7 +91,6 @@ es:
 
   ubicacion_hotel: Creemos en la calidad de nuestros servicios y atención como nuestra mayor garantía y fuente de satisfacción hacia usted, por eso deseamos que se sienta con la mayor confianza hacia nosotros y tenga la seguridad de que ha hecho una buena y segura elección. Seguimos trabajando para ofrecerle el mejor hospedaje de San Pedro Sula.
 
-<<<<<<< HEAD
   aboutus_clarion: Sobre Nosotros
   
   parrafo1: Creemos en la calidad de nuestros servicios y atención como nuestra mayor garantía y fuente de satisfacción hacia usted, por eso deseamos que se sienta con la mayor confianza hacia nosotros y tenga la seguridad de que ha hecho una buena y segura elección. Seguimos trabajando para ofrecerle el mejor hospedaje de San Pedro Sula.
@@ -101,6 +110,10 @@ es:
   vision: Visión
   
   texto_vision: Lograr la preferencia y satisfacción de nuestros clientes, posicionándonos como uno de los mejors hoteles en San Pedro Sula.
+  
+  valores: Valores
+  
+  nuestra_ubicacion: Nuestra Ubicación
   
   date:
     abbr_day_names:
@@ -277,7 +290,11 @@ es:
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: ''p><%=t :orden%> <p>
+              <p><%=t :limpieza%><p>
+              <p><%=t :respeto%> </p>
+              <p> <%=t :trabajo%> </p>
+              <p> <%=t :honradez%> </p>
     precision:
       format:
         delimiter: ''
@@ -302,8 +319,6 @@ es:
       <<: *errors
 
 
-=======
->>>>>>> 22ed0fc1b2f8d65931321fd99de081b73490ac63
 
 
 

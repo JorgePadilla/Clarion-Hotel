@@ -1,5 +1,5 @@
 es:
-  bienvenida_hotel: Bienvenidos al Hotel Clarion San Pedro Sula
+  bienvenida_hotel: Bienvenidos a Hotel Clarion San Pedro Sula
 
   ubicacion_hotel2: 
 
@@ -17,9 +17,13 @@ es:
   
   todas_habitaciones: Todas nuestras habitaciones cuentan con
 
+
   confort_clarion: Confort
   
   confort_texto: Le ofrecemos muchos servicios y comodidades para que se sienta como en casa, y pueda mantenerse en contacto con sus amigos y su familia.
+
+
+
 
   fina_decoracion: Fina Decoracion
 
@@ -110,6 +114,15 @@ es:
   valores: Valores
   
   nuestra_ubicacion: Nuestra Ubicación
+
+  cumple: Cumpleañeros
+
+  romantico: Fin de semana relax( paquete romantico )
+
+  menu: Menu Ejecutivo
+
+  habitacion: Habitación 3X2 
+
   
   date:
     abbr_day_names:
@@ -309,6 +322,8 @@ es:
   activerecord:
     errors:
       <<: *errors
+
+
 
 
 
