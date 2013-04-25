@@ -13,7 +13,7 @@
 <link href="css/colorbox.css" rel="stylesheet" type="text/css" /> 
 <link href="css/nivo-slider.css" rel="stylesheet" />
 <link href="css/superfish.css" rel="stylesheet" />
-<link id="google_font" href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:light,regular' rel='stylesheet' type='text/css' />
+<link href="css/google_font.css" rel="stylesheet" />
 <!-- fallback if js not enabled //-->
 <link href="css/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" /> 
 <!-- CSS End //-->
@@ -260,9 +260,9 @@ body {background-image:url(images/pattern/ptn-04.png);}
                     <li><%= link_to t('promociones_clarion'), promociones_path %></li>
                     <li><%= link_to t('aboutus_clarion'), aboutus_path %></li>
                 <% if t('idioma_clarion') == "English" %>
-                         <li><%= link_to t('idioma_clarion'), promociones_path(:locale => "en") %></li>
+                         <li><%= link_to t('idioma_clarion'), habitaciones_path(:locale => "en") %></li>
                                 <% else %>
-                                   <li><%= link_to t('idioma_clarion'), promociones_path(:locale => "es") %></li>  
+                                   <li><%= link_to t('idioma_clarion'), habitaciones_path(:locale => "es") %></li>  
                                        <% end %> 
                     
                 
@@ -278,77 +278,116 @@ body {background-image:url(images/pattern/ptn-04.png);}
       <div class="wrapper">
         <div class="container_12">
           <div class="grid_12">
-            <h1><%=t :promociones_clarion %></h1>
+            <h1><%=t :habitaciones_clarion %></h1>
           </div>
         </div>
         <div class="clear"></div>
       </div>
     </div>
 
-  <style type="text/css">
- #prueba {
-left:1150px;
-position:relative;
-}
-
-
-</style>
-
-
-  <% if current_user %>
-    Logged in as <%= current_user.email %>.
-    <%= link_to "Log out", log_out_path %>
-
-  <% else %>
-<style type="text/css">
-   #imagen {
-display: table;
-    margin: 0 auto;
-}
-
-#tabla {
-
-position:relative;
-left:100px;
-right:auto;
-}
-
-</style>
- 
-   
-  <% end %>
-
-
-<% flash.each do |name, msg| %>
-  <%= content_tag :div, msg, :id => "flash_#{name}" %>
-<% end %>
-
-
-<% @advertisements.each do |advertisement| %>
-
-<% end %>
-
-
-<script src="galleria/galleria-1.2.9.min.js"></script>
-<style>
-    #galleria{ width: 800px; height: 400px; background-color: #000; margin-left: auto; margin-right: auto; }
-</style>
-
-
-
- <div id="galleria">
-            <img src="images/fotospromociones/1.jpg">
-            <img src="images/fotospromociones/2.jpg">
-            <img src="images/fotospromociones/3.jpg">
-            <img src="images/fotospromociones/4.jpg">
+    <div id="slideshow" class="nivoslider">
+    	<div id="slider" class="nivoSlider"> 
+        	<div class="slide1">
+                <a href="#1"><img src="/images/nivoslides/slide1.jpg" alt="Demo Slide" /></a>
+            </div>
+            <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide2.jpg" alt="Demo Slide" /></a>
+            </div>
+            <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide3.jpg" alt="Demo Slide" /></a>
+            </div>
+            <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide4.jpg" alt="Demo Slide" /></a>
+            </div>
+             <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide5.jpg" alt="Demo Slide" /></a>
+            </div>  
+             <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide6.jpg" alt="Demo Slide" /></a>
+            </div> 
+            <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide7.jpg" alt="Demo Slide" /></a>
+            </div> 
+            <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide8.jpg" alt="Demo Slide" /></a>
+            </div> 
+            <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide9.jpg" alt="Demo Slide" /></a>
+            </div> 
+            <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide10.jpg" alt="Demo Slide" /></a>
+            </div> 
+               <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide11.jpg" alt="Demo Slide" /></a>
+            </div>
+               <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide12.jpg" alt="Demo Slide" /></a>
+            </div>
+               <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide13.jpg" alt="Demo Slide" /></a>
+            </div>  
+               <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide14.jpg" alt="Demo Slide" /></a>
+            </div> 
+               <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide15.jpg" alt="Demo Slide" /></a>
+            </div> 
+               <div class="slide2">
+                <a href="#1"><img src="/images/nivoslides/slide16.jpg" alt="Demo Slide" /></a>
+            </div>  
+</div>
+</div><!-- Slideshow End -->
+<div id="container" class="container_12 clearfix">
+  <div class="block">
+        <div>
+          <h2 class="title"><%=t :nuestras_habitaciones%></h2>
+          <p> <%=t :nuestras_texto%></p>
         </div>
-
-
-<script>
-            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-            Galleria.run('#galleria');
-        </script>
-
+ 
+      </div>
+      <div class="grid_13">
+        <div class="mainbody">
+          <div class="maincontent">
+            <h3><%=t :confort_clarion%></h3>
+            <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/conf.jpg" /> <%=t :confort_texto%><br></p>
+          </div>
+          <!-- Maincontent end -->
+        </div>
+        <!-- Mainbody end -->
+        <!-- Block End -->
+        <!-- Block End -->
+      </div>
+      <div class="grid_13">
+        <div class="mainbody">
+          <div class="maincontent">
+            <h3><%=t :fina_decoracion %></h3>
+            <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="/images/dec.jpg" /> <%=t :texto_decoracion%> <br>
+            </p>
+          </div>
+          <!-- Maincontent end -->
+        </div>
+        <!-- Mainbody end -->
+        <!-- Block End -->
+        <!-- Block End -->
+      </div>
+      <div class="grid_13">
+        <div class="mainbody">
+          <div class="maincontent">
+            <h3><%=t :reservaciones_clarion%></h3>
+            <p><a href="otros.html"><img src="/images/reservaciones290.jpg" alt=".shadow css class" width="290" height="135" border="0" class="shadow" style="margin-left: 0px; float: left" /></a><br>
+              PBX :  (504) 255-36070 <br>
+              PBX:   (504) 255-36071 <br>
+              Fax:   (504) 255-24570 <br>
+              Email: recepcion@hotelclarionsps.com </p>
+          </div>
+          <!-- Maincontent end -->
+        </div>
+        <!-- Mainbody end -->
+        <!-- Block End -->
+        <!-- Block End -->
+      </div>
+    </div>
+    <!-- Container End -->
   <div id="bottom">
       <!-- Container 12 End -->
       <div id="footer2" class="container_12">

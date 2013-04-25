@@ -19,10 +19,16 @@ en:
   todas_habitaciones: All our rooms have
 
   confort_clarion: Comfort
+  
+  confort_texto: We offer many services and amenities to make you feel at home, and to keep in touch with friends and family.
+  
+  nuestras_texto: All our comfortable, relaxing and luxurious rooms have been decorated with the best taste to make your stay a memorable and well exceed the expectations of our guests, feature fine amenities to make your stay unique, including, Air conditioning, TV 32 cable, access to high speed wireless internet, work desk, spacious bathrooms with shower and dryer. The host has the courtesy the coffee and water in the room. The hotel has 24 hours security and surveillance cameras in all areas.
 
   fina_decoracion: Fine Decoration
 
   reservaciones_clarion: Bookings
+  
+  reservaciones_texto: Address, Avenida Circunvalación 2 Calle, S.O. Bo. Rio de piedras. San Pedro Sula, Cortés, Honduras
 
   texto_decoracion: All our rooms and suites are tastefully decorated to make your stay an unforgettable experience.
 
@@ -86,10 +92,11 @@ en:
   nombre_formulario: Name
 
   aboutus_clarion: About Us
-
-  fechaingreso: 'Join Date'
   
-  fechasalida: 'Departure Date'
+  
+  
+  
+
 
 
 
