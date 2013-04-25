@@ -4,8 +4,8 @@ class ReservacionMailer < ActionMailer::Base
 
   
   def registration_confirmation(user)
-    @hola='hola'
-   mail(:to => "jorge161990@hotmail.com", :subject => "Registered")
+    @hola=user
+   mail(:to => "reservaciones@hotelclarionsps.com", :subject => "Reservacion")
   end
 
 
