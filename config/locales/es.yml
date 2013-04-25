@@ -104,6 +104,15 @@ es:
   valores: Valores
   
   nuestra_ubicacion: Nuestra Ubicación
+
+  cumple: Cumpleañeros
+
+  romantico: Fin de semana relax( paquete romantico )
+
+  menu: Menu Ejecutivo
+
+  habitacion: Habitación 3X2 
+
   
   date:
     abbr_day_names:
@@ -303,6 +312,8 @@ es:
   activerecord:
     errors:
       <<: *errors
+
+
 
 
 
