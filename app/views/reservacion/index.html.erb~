@@ -9,6 +9,7 @@
   
 <!-- CSS Start //--> 
 <link rel="shortcut icon" href="images/favicon.png" /> 
+<link href="style.css" rel="stylesheet" type="text/css" /> 
 <link href="css/colorbox.css" rel="stylesheet" type="text/css" /> 
 <link href="css/plusslider.css" rel="stylesheet" />
 <link href="css/reservacion.css" rel="stylesheet" />

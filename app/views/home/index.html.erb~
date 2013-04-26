@@ -733,27 +733,25 @@ body {background-image:url(images/pattern/ptn-04.png);}
 
     <!-- Container 12 End -->
 
-    <div id="footer2" class="container_12">
+    <div id="footer2" class="container_12" >
  
-      <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+      
           
 
+<table  width="100%">
+<td>
+	<a>Sitio web diseñado por TAPHN © Copyright 2013</a>
+<td>
+	
+</td>
+<td align="right">
+       <a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" title="Hotel Clarion San Pedro Sula"><img src="/images/facebook_64.png" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" </a> <!-- Facebook Badge END -->  
+       </td>  
 
-         
+       
 
-         
-        </td>
-           <td WIDTH=75><!-- Facebook Badge START --><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP"  style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Hotel Clarion San Pedro Sula"></a><br/><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" title="Hotel Clarion San Pedro Sula"><img src="/images/facebook_64.png" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" </a><!-- Facebook Badge END -->   </td>
-
-        <tr>
-
-         
-
-         
-        </tr>
-
-      </table>
-
+</table>
+ 
     </div>
 
   </div>
