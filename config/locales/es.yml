@@ -139,6 +139,30 @@ es:
 
   horario: Horario Restaurante
   
+  bar: Bar El Capitan
+  
+  bar_texto: Después de un dia dificil, disfrute de una refrescante bebida en el bar del hotel "El Capitán" ofreciéndole una variedad muy amplia de cocteles y bebidas nacionales e internacionales en un ambiente exclusivo y único.
+  
+  horario_bar: Horario bar
+  
+  happy_hour: Happy Hour
+  
+  gym_texto: El hotel cuenta con un relajante sauna y un gimnasio completamente equipado.
+  
+  horario: Horario
+  
+  centro_de_negocio: Centro de Negocios
+  
+  centro_texto: A los viajeros de negocios les ofrecemos comodidades adicionales como acceso al fax,fotocopiadora,impresiones y escaneados en nuestro centro de negocios con ordenador a acceso a internet de alta velocidad.
+  
+  eventos_texto: Hotel Clarión San Pedro Sula cuenta con modernos y amplios salones con capacidad para 200 personas,equipados con sistemas de luces graduales y tecnologia de punta en audiovisuales. Estamos comprometidos a asegurar que su evento sea único y se lleven a sus invitados una experiencia inolvidable.
+  
+  contacto: Contacto
+  
+  correo: Correo
+  
+  condominio_texto: Disfrute de largas estadias en nuestras comodos y amplios condominios. Todos estan equipados con sala,comedor,cocina,refrigeradora,camas queen,internet de alta velocidad,Tv's Plasma y amplios baños.
+  
   date:
     abbr_day_names:
     - dom

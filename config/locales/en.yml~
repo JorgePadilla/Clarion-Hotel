@@ -149,13 +149,30 @@ en:
   
   restaurante_texto: The hotel restaurant "Pergaminos" offers a relaxed and unique with delicious national and international dishes are always prepared with the freshest ingredients. Room service is available from 6:00 a.m. to 11:00 pm with hot and cold dishes, providing a culinary experience in the comfort of your room.
   
-  horario: Restaurant Hours 7:00 a.m. to 10:30 pm
-
-
-
-
-
-
+  horario: Restaurant Hours
   
+  bar: Bar The Captain
+  
+  bar_texto: After a hard day, enjoy a refreshing drink at the hotel bar "Captain" offering a wide variety of cocktails and domestic and international drinks in an exclusive and unique.
+
+  horario_bar: Bar hours
+  
+  happy_hour: Happy Hour
+  
+  gym_texto: The hotel has a relaxing sauna and a fully equipped gym.
+  
+  horario: Schedule
+  
+  centro_de_negocio: Business center
+  
+  centro_texto: For business travelers we offer additional conveniences like access to fax, photocopying, printing and scanning in our business center with computer access to high speed internet.
+
+  eventos_texto: Clarion Hotel San Pedro Sula has modern and spacious rooms with capacity for 200 people, equipped with gradual lighting systems and advanced technology in audiovisual. We are committed to ensuring that your event is unique and your guests with an unforgettable experience.
+
+  contacto: Contact
+  
+  correo: Email
+  
+  condominio_texto:  
 
  
