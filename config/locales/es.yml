@@ -122,7 +122,22 @@ es:
   menu: Menu Ejecutivo
 
   habitacion: Habitación 3X2 
+  
+  otros_servicios: Other Services
+  
+  masajes: Masajes
+  
+  transporte: Transporte
+  
+  lavanderia: Lavanderia
+  
+  servicio_de_transporte: Servicio de Transporte
+  
+  restaurante_pergaminos: Restaurante Pergaminos
+  
+  restaurante_texto: El restaurante del hotel "Pergaminos" ofrece un ambiente relajado y exclusivo con deliciosos platillos nacionales e internacionales preparados siempre con los ingredientes más frescos. El servicio de habitación está disponible de 6:00 am a 11:00 pm con platillos fríos y calientes, proporcionándoles una experiencia culinaria en la comodidad de su habitación.
 
+  horario: Horario Restaurante
   
   date:
     abbr_day_names:

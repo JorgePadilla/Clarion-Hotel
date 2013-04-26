@@ -17,13 +17,13 @@ es:
   
   todas_habitaciones: Todas nuestras habitaciones cuentan con
 
-<<<<<<< HEAD
+
   confort_clarion: Confort
   
   confort_texto: Le ofrecemos muchos servicios y comodidades para que se sienta como en casa, y pueda mantenerse en contacto con sus amigos y su familia.
-=======
-  confort_clarion: Comfort
->>>>>>> 69f3cc38a64cbfcef1ad64ec968c60b4e282ecba
+
+
+
 
   fina_decoracion: Fina Decoracion
 
@@ -114,6 +114,30 @@ es:
   valores: Valores
   
   nuestra_ubicacion: Nuestra Ubicación
+
+  cumple: Cumpleañeros
+
+  romantico: Fin de semana relax( paquete romantico )
+
+  menu: Menu Ejecutivo
+
+  habitacion: Habitación 3X2 
+  
+  otros_servicios: Other Services
+  
+  masajes: Masajes
+  
+  transporte: Transporte
+  
+  lavanderia: Lavanderia
+  
+  servicio_de_transporte: Servicio de Transporte
+  
+  restaurante_pergaminos: Restaurante Pergaminos
+  
+  restaurante_texto: El restaurante del hotel "Pergaminos" ofrece un ambiente relajado y exclusivo con deliciosos platillos nacionales e internacionales preparados siempre con los ingredientes más frescos. El servicio de habitación está disponible de 6:00 am a 11:00 pm con platillos fríos y calientes, proporcionándoles una experiencia culinaria en la comodidad de su habitación.
+
+  horario: Horario Restaurante: 7:00 am - 10:30 pm
   
   date:
     abbr_day_names:
@@ -290,11 +314,7 @@ es:
           tb: TB
     percentage:
       format:
-        delimiter: ''p><%=t :orden%> <p>
-              <p><%=t :limpieza%><p>
-              <p><%=t :respeto%> </p>
-              <p> <%=t :trabajo%> </p>
-              <p> <%=t :honradez%> </p>
+        delimiter: ''
     precision:
       format:
         delimiter: ''
@@ -317,6 +337,8 @@ es:
   activerecord:
     errors:
       <<: *errors
+
+
 
 
 

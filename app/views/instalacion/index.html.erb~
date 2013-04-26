@@ -412,10 +412,13 @@ body {background-image:url(images/pattern/ptn-04.png);}
 <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/gimnasio.jpg" onclick= "myPopup2('gym?locale=en')"/></p>&nbsp;
          
    <% end %>
-
+                <% if t('idioma_clarion') == "English" %>
        	        <h3><%=t :condominios_clarion%></h3>
-       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/logo.png" onclick= "myPopup3('condominios')" /></p>
-                
+       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/logo.png" onclick= "myPopup3('condominios?locale=es')" /></p>
+ <% else %>
+ <h3><%=t :condominios_clarion%></h3>
+       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/logo.png" onclick= "myPopup3('condominios?locale=en')" /></p>
+ <% end %>                          
    	          </div>
        	      <!-- Maincontent end -->
    	        </div>
