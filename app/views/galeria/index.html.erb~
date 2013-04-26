@@ -13,7 +13,7 @@
 <link href="css/colorbox.css" rel="stylesheet" type="text/css" /> 
 <link href="css/plusslider.css" rel="stylesheet" />
 <link href="css/superfish.css" rel="stylesheet" />
-<link id="google_font" href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:light,regular' rel='stylesheet' type='text/css' />
+<link href="css/google_font.css" rel="stylesheet" />
 <!-- fallback if js not enabled //-->
 <link href="css/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" /> 
 <!-- CSS End //-->
@@ -27,7 +27,6 @@
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.jparallax.min.js"></script>
 <script type="text/javascript" src="js/jquery.infieldlabel.min.js"></script>
-<script type="text/javascript" src="js/jquery.twitter.js"></script>
 <script type="text/javascript" src="js/jquery.supersubs.js"></script>
 <script type="text/javascript" src="js/jquery.superfish.js"></script>
 <script type="text/javascript" src="js/functions.js"></script> 
@@ -264,19 +263,19 @@ body {background-image:url(images/pattern/ptn-04.png);}
             </div>
           <div class="grid_9">
             <ul class="menu sf-menu">
-                </li>
+                 </li>
 
 		    		 <li><%= link_to t('inicio_clarion'), root_path %></li>
 
                     </li>
-                    <li><%= link_to t('habitaciones_clarion'), habitaciones_path %></li>
+                     <li><%= link_to t('habitaciones_clarion'), habitaciones_path %></li>
                     </li>
-                    <li><a href="convenciones.html">Honduras</a></li>
                     <li><%= link_to t('instalaciones_clarion'), instalaciones_path %></li>
-                      <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
+                    <li><%= link_to t('reservaciones_clarion'), reservaciones_path %></li>
                     </li>
-                     <li><%= link_to t('galeria_clarion'), galeria_path %></li>
-                     <li><%= link_to t('promociones_clarion'), promociones_path %></li>
+                    <li><%= link_to t('galeria_clarion'), galeria_path %></li>
+                    <li><%= link_to t('promociones_clarion'), promociones_path %></li>
+                    <li><%= link_to t('aboutus_clarion'), aboutus_path %></li>
                     <% if t('idioma_clarion') == "English" %>
                          <li><%= link_to t('idioma_clarion'), galeria_path(:locale => "en") %></li>
                                 <% else %>
@@ -308,7 +307,15 @@ body {background-image:url(images/pattern/ptn-04.png);}
         	<div class="grid_12">
 				<div class="mainbody">
                     <div class="maincontent">
-                        <ul class="gallery"><li><a href="images/galeria/slide1.jpg" rel="colorbox"><img src="images/galeria/slide1.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide2.jpg" rel="colorbox"><img src="images/galeria/slide2.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide3.jpg"" rel="colorbox"><img src="images/galeria/slide3.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide4.jpg" rel="colorbox"><img src="images/galeria/slide4.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide5.jpg" rel="colorbox"><img src="images/galeria/slide5.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide6.jpg" rel="colorbox"><img src="images/galeria/slide6.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide7.jpg"rel="colorbox"><img src="images/galeria/slide7.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide8.jpg" rel="colorbox"><img src="images/galeria/slide8.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide9.jpg" rel="colorbox"><img src="images/galeria/slide9.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide10.jpg" rel="colorbox"><img src="images/galeria/slide10.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide11.jpg" rel="colorbox"><img src="images/galeria/slide11.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide12.jpg" rel="colorbox"><img src="images/galeria/slide12.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide13.jpg" rel="colorbox"><img src="images/galeria/slide13.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide14.jpg" rel="colorbox"><img src="images/galeria/slide14.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide15.jpg" rel="colorbox"><img src="images/galeria/slide15.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide16.jpg"rel="colorbox"><img src="images/galeria/slide16.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide17.jpg"rel="colorbox"><img src="images/galeria/slide17.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide18.jpg" rel="colorbox"><img src="images/galeria/slide18.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide19.jpg" rel="colorbox"><img src="images/galeria/slide19.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide20.jpg" rel="colorbox"><img src="images/galeria/slide20.jpg" alt=""  width="165" height="110" /></a></li>
+
+                        <ul class="gallery"><li><a href="images/galeria/slide1.jpg" rel="colorbox"><img src="images/galeria/slide1_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide2.jpg" rel="colorbox"><img src="images/galeria/slide2_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide3.jpg"" rel="colorbox"><img src="images/galeria/slide3_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide4.jpg" rel="colorbox"><img src="images/galeria/slide4_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide5.jpg" rel="colorbox"><img src="images/galeria/slide5_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide6.jpg" rel="colorbox"><img src="images/galeria/slide6_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide7.jpg"rel="colorbox"><img src="images/galeria/slide7_thumbnail.jpg" alt="" 
+width="165" height="110" /></a></li><li><a href="images/galeria/slide8.jpg" rel="colorbox"><img src="images/galeria/slide8_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide9.jpg" rel="colorbox"><img src="images/galeria/slide9_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide10.jpg" rel="colorbox"><img src="images/galeria/slide10_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide11.jpg" rel="colorbox"><img src="images/galeria/slide11_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide12.jpg" rel="colorbox"><img src="images/galeria/slide12_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide13.jpg" rel="colorbox"><img src="images/galeria/slide13_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide14.jpg" rel="colorbox"><img src="images/galeria/slide14_thumbnail.jpg" alt=""
+ width="165" height="110" /></a></li><li><a href="images/galeria/slide15.jpg" rel="colorbox"><img src="images/galeria/slide15_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide16.jpg"rel="colorbox"><img src="images/galeria/slide16_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide17.jpg"rel="colorbox"><img src="images/galeria/slide17_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide18.jpg" rel="colorbox"><img src="images/galeria/slide18_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide19.jpg" rel="colorbox"><img src="images/galeria/slide19_thumbnail.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide20.jpg" rel="colorbox"><img src="images/galeria/slide20_thumbnail.jpg" alt=""  width="165" height="110" /></a></li>
+
+                        <ul class="gallery"><li><a href="images/galeria/slide1.jpg" rel="colorbox"><img src="images/galeria/slide1.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide2.jpg" rel="colorbox"><img src="images/galeria/slide2.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide3.jpg"" rel="colorbox"><img src="images/galeria/slide3.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide4.jpg" rel="colorbox"><img src="images/galeria/slide4.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide5.jpg" rel="colorbox"><img src="images/galeria/slide5.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide6.jpg" rel="colorbox"><img src="images/galeria/slide6.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide7.jpg"rel="colorbox"><img src="images/galeria/slide7.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide8.
+jpg" rel="colorbox"><img src="images/galeria/slide8.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide9.jpg" rel="colorbox"><img src="images/galeria/slide9.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide10.jpg" rel="colorbox"><img src="images/galeria/slide10.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide11.jpg" rel="colorbox"><img src="images/galeria/slide11.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide12.jpg" rel="colorbox"><img src="images/galeria/slide12.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide13.jpg" rel="colorbox"><img src="images/galeria/slide13.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide14.jpg" rel="colorbox"><img src="images/galeria/slide14.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide15.jpg" rel="colorbox"><img src="images/galeria/slide15.jpg" alt="" 
+width="165" height="110" /></a></li><li><a href="images/galeria/slide16.jpg"rel="colorbox"><img src="images/galeria/slide16.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide17.jpg"rel="colorbox"><img src="images/galeria/slide17.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide18.jpg" rel="colorbox"><img src="images/galeria/slide18.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide19.jpg" rel="colorbox"><img src="images/galeria/slide19.jpg" alt="" width="165" height="110" /></a></li><li><a href="images/galeria/slide20.jpg" rel="colorbox"><img src="images/galeria/slide20.jpg" alt=""  width="165" height="110" /></a></li>
+
                         </ul>                    </div><!-- Maincontent end -->
                 </div><!-- Mainbody end -->
             </div><!-- grid9 end --><!-- Sidebar end --></div><!-- Content End -->
@@ -317,15 +324,17 @@ body {background-image:url(images/pattern/ptn-04.png);}
 
     <div id="bottom">
       <!-- Container 12 End -->
-      <div id="footer2" class="container_12">
-        <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
-          <tr>
-            <td> © Copyright 2012 Hotel Clarion San Pedro Sula Diseño: Jorge Padilla y Francisco Calix </td>
-            <td class="partner_hotels"><a href="hoteles_asociados.html">Hotel Clarion</a></td>
-          </tr>
-        </table>
-      </div>
+     <div id="footer2" class="container_12" >
+      <table  width="100%">
+	  <td>
+	      <a>Sitio web diseñado por TAPHN © Copyright 2013</a>
+	  </td>
+	  <td align="right">
+	      <a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" title="Hotel Clarion San Pedro Sula"><img src="/images/facebook_64.png" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" </a> <!-- Facebook Badge END -->  
+	  </td>  
+       </table> 
     </div>
+   </div>
     <!-- Bottom End -->
 </div><!-- Wrapper end -->
 

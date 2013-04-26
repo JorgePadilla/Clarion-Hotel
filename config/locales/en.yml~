@@ -115,7 +115,7 @@ en:
   
   valores: VALUES
   
-  nuestra_ubicacion: Nuestra Ubicación
+  nuestra_ubicacion: Our location
   
   orden: Order
   
@@ -133,6 +133,8 @@ en:
 
   menu: Executive Menu
 
+  habitacion: 3X2 Room
+  
   habitacion: 3X2 Room
 
 

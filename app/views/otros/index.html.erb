@@ -84,7 +84,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
                 <li title="ptn-14" class="ptn-14"></li>
                 <li title="ptn-15" class="ptn-15"></li>
                 <li title="ptn-16" class="ptn-16"></li>
-                <li title="ptn-17" class="ptn-17"></li>
+                <li title="ptn-17" class="ptn-17"></li>In
                 <li title="ptn-18" class="ptn-18"></li>
                 <li title="ptn-19" class="ptn-19"></li>
         	</ul>
@@ -278,7 +278,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
       <div class="wrapper">
         <div class="container_12">
           <div class="grid_12">
-            <h1>Otros Servicios</h1>
+            <h1><%=t :otros_servicios%></h1>
           </div>
         </div>
         <div class="clear"></div>
@@ -286,28 +286,88 @@ body {background-image:url(images/pattern/ptn-04.png);}
     </div>
 
 <div>
+<br><br>
+
+
+
+<script>
+$(document).ready(function(){
+
+	$('.container .flying-text').css({opacity:0});
+	$('.container .active-text').animate({opacity:1, marginLeft: "350px"}, 4000);
+
+	var int = setInterval(changeText, 5000);	
+
+
+function changeText(){
+	
+	var $activeText = $(".container .active-text");	
+	
+	var $nextText = $activeText.next(); 
+	if($activeText.next().length == 0) $nextText = $('.container .flying-text:first');
+	
+	$activeText.animate({opacity:0}, 1000);
+	$activeText.animate({marginLeft: "-100px"});
+		
+	$nextText.css({opacity: 0}).addClass('active-text').animate({opacity:1, marginLeft: "350px"}, 4000, function(){
+		
+		$activeText.removeClass('active-text');											  
+	});
+}
+});
+</script>
+
+<style>
+
+.container{
+background-color:#000;
+width:800px;
+margin:0 auto;
+color:#FFF;
+overflow:hidden;
+}
+
+.flying-text{
+margin-left:-100px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
 <br>
-<p> * Masajes  </p>
+    <h1 class="flying-text active-text">Masajes</h1>
+    <h1 class="flying-text">Transporte</h1>    
+    <h1 class="flying-text">Lavanderia</h1>
+    <h1 class="flying-text">Servicio de transporte</h1>
+<br>
+</div>
 
-<p> * Transporte  </p>
-<p> * Lavanderia </p>
-<p> * Servicio a Domicilio  </p>
+</body>
 
-
+<br><br>
 
 </div>
    
   <div id="bottom">
       <!-- Container 12 End -->
-      <div id="footer2" class="container_12">
-        <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
-          <tr>
-            <td> © Copyright 2012 Hotel Clarion  Diseño: Jorge Padilla y Francisco Calix </td>
-            <td class="partner_hotels"><a href="hoteles_asociados.html">Hotel Clarion</a></td>
-          </tr>
-        </table>
-      </div>
+      <div id="footer2" class="container_12" >
+      <table  width="100%">
+	  <td>
+	      <a>Sitio web diseñado por TAPHN © Copyright 2013</a>
+	  </td>
+	  <td align="right">
+	      <a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" title="Hotel Clarion San Pedro Sula"><img src="/images/facebook_64.png" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" </a> <!-- Facebook Badge END -->  
+	  </td>  
+       </table> 
     </div>
+   </div>
 <!-- Bottom End --></div><!-- Wrapper end -->
 
 <script type="text/javascript">$('#noscript').remove();</script>
+
+
+</script>
