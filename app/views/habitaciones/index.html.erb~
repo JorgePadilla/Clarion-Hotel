@@ -342,8 +342,14 @@ body {background-image:url(images/pattern/ptn-04.png);}
       <div class="grid_13">
         <div class="mainbody">
           <div class="maincontent">
+              <% if t('idioma_clarion') == "English" %>
             <h3><%=t :confort_clarion%></h3>
-            <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/conf.jpg" /> <%=t :confort_texto%><br></p>
+            <p><a href="otros"><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/conf.jpg" /></a> <%=t :confort_texto%><br></p>
+<% else %>
+          <h3><%=t :confort_clarion%></h3>
+            <p><a href="otros?locale=en"><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/conf.jpg" /></a> <%=t :confort_texto%><br></p>
+
+<% end %>
           </div>
           <!-- Maincontent end -->
         </div>
@@ -354,9 +360,15 @@ body {background-image:url(images/pattern/ptn-04.png);}
       <div class="grid_13">
         <div class="mainbody">
           <div class="maincontent">
+             <% if t('idioma_clarion') == "English" %>
             <h3><%=t :fina_decoracion %></h3>
-            <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="/images/dec.jpg" /> <%=t :texto_decoracion%> <br>
+            <p><a href="galeria"><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="/images/dec.jpg" /> <%=t :texto_decoracion%> <br>
             </p>
+            <% else %>
+                <h3><%=t :fina_decoracion %></h3>
+            <p><a href="galeria"><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="/images/dec.jpg" /> <%=t :texto_decoracion%> <br>
+            </p>
+            <% end %>
           </div>
           <!-- Maincontent end -->
         </div>
@@ -367,12 +379,22 @@ body {background-image:url(images/pattern/ptn-04.png);}
       <div class="grid_13">
         <div class="mainbody">
           <div class="maincontent">
+             <% if t('idioma_clarion') == "English" %>
             <h3><%=t :reservaciones_clarion%></h3>
-            <p><a href="otros.html"><img src="/images/reservaciones290.jpg" alt=".shadow css class" width="290" height="135" border="0" class="shadow" style="margin-left: 0px; float: left" /></a><%=t :reservaciones_texto%><br>
+            <p><a href="reservaciones"><img src="/images/reservaciones290.jpg" alt=".shadow css class" width="290" height="135" border="0" class="shadow" style="margin-left: 0px; float: left" /></a><%=t :reservaciones_texto%><br>
               PBX :  (504) 255-36070 <br>
               PBX:   (504) 255-36071 <br>
               Fax:   (504) 255-24570 <br>
               Email: reservaciones@hotelclarionsps.com </p>
+             <% else %>
+                      <h3><%=t :reservaciones_clarion%></h3>
+            <p><a href="reservaciones?locale=en"><img src="/images/reservaciones290.jpg" alt=".shadow css class" width="290" height="135" border="0" class="shadow" style="margin-left: 0px; float: left" /></a><%=t :reservaciones_texto%><br>
+              PBX :  (504) 255-36070 <br>
+              PBX:   (504) 255-36071 <br>
+              Fax:   (504) 255-24570 <br>
+              Email: reservaciones@hotelclarionsps.com </p>
+             <% end  %>
+          
           </div>
           <!-- Maincontent end -->
         </div>
@@ -382,7 +404,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
       </div>
     </div>
     <!-- Container End -->
-    .
+    
  <div id="bottom">
 
     <!-- Container 12 End -->
