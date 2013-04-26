@@ -8,31 +8,7 @@ IMPORTANT TIPS:
 - To change font, search for - 'Yanone Kaffeesatz' (the font which is set right now) and replace with your own font;
 
 */
-body{
-
-background-color:#000;
-
-}
-
-.container{
-
-background-color:#000;
-
-width:500px;
-
-margin:0 auto;
-
-color:#FFF;
-
-overflow:hidden;
-
-}
-
-.flying-text{
-
-margin-left:-100px;
-
-}
+/*  */
 /* Import CSS Reset File */
 @import url("css/reset.css");
 /* Import CSS 960 Grid System File */
