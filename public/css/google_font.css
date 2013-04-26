@@ -2,11 +2,12 @@
   font-family: 'Yanone Kaffeesatz';
   font-style: normal;
   font-weight: 300;
-  src: local('Yanone Kaffeesatz Light'), local('YanoneKaffeesatz-Light'), url(https://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/We_iSDqttE3etzfdfhuPRVMR8FhBa8rkfAKaPBwAU3s.woff) format('woff');
+  src: url('We_iSDqttE3etzfdfhuPRVMR8FhBa8rkfAKaPBwAU3s.woff');
 }
 @font-face {
   font-family: 'Yanone Kaffeesatz';
   font-style: normal;
   font-weight: 400;
-  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(https://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/YDAoLskQQ5MOAgvHUQCcLRTHiN2BPBirwIkMLKUspj4.woff) format('woff');
+  src: url('YDAoLskQQ5MOAgvHUQCcLRTHiN2BPBirwIkMLKUspj4.woff');
 }
+

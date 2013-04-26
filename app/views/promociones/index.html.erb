@@ -16,7 +16,7 @@
 <link href="css/colorbox.css" rel="stylesheet" type="text/css" /> 
 <link href="css/nivo-slider.css" rel="stylesheet" />
 <link href="css/superfish.css" rel="stylesheet" />
-<link id="google_font" href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:light,regular' rel='stylesheet' type='text/css' />
+<link href="css/google_font.css" rel="stylesheet" />
 <!-- fallback if js not enabled //-->
 <link href="css/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" /> 
 <!-- CSS End //-->
@@ -29,7 +29,6 @@
 <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.infieldlabel.min.js"></script>
-<script type="text/javascript" src="js/jquery.twitter.js"></script>
 <script type="text/javascript" src="js/jquery.supersubs.js"></script>
 <script type="text/javascript" src="js/jquery.superfish.js"></script>
 <script type="text/javascript" src="js/functions.js"></script> 
@@ -330,42 +329,32 @@ right:auto;
 <% @advertisements.each do |advertisement| %>
 
 <% end %>
-   <div id="container" class="container_12 clearfix">
-       <div class="grid_12">
-	<div class="clear"></div>
-       </div>
-         <div class="block">
-           <div class="grid_6">
-	   </div>
-	 </div>
+   <script src="galleria/galleria-1.2.9.min.js"></script>
+<style>
+    #galleria{ width: 600px; height: 450px; background-color: #000; margin-left: auto; margin-right: auto; }
+</style>
 
-          <div class="grid_6">
-            <h3><%= t(:cumple) %></h3>
-            <h3><a href="/images/fotospromociones/2.jpg">Catering Service</a></h3>
-            <h3><a href="/images/fotospromociones/3.jpg"><%= t(:romantico) %></a></h3>
-	      
-            </div>
-     
-     
-     
-     
-     
-     
-	
-     
-	    <h3><a href="/images/fotospromociones/1.jpg">Happy Hour</h3>
-            <h3><a href="/images/fotospromociones/4.jpg"><%= t(:menu) %></a></h3>
-            <h3><%= t(:habitacion) %></h3>
+
+
+ <div id="galleria">
+          
+             <img src="images/fotospromociones/1.jpg">
+             <img src="images/fotospromociones/2.jpg">
+            <img src="images/fotospromociones/3.jpg">
+           <img src="images/fotospromociones/4.jpg">       
+            <img src="images/fotospromociones/5.jpg"> 
+            <img src="images/fotospromociones/6.jpg"> 
+          
+        </div>
+
+
+ <script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
             
-      
-
-</div>
-
-    </div><!-- Block End --><!-- Block End -->
-
-        
-
-  </div><!-- Container End -->
+            $('#galleria').galleria({
+               autoplay:1500
+             });
+        </script>  
 
   <div id="bottom">
       <!-- Container 12 End -->

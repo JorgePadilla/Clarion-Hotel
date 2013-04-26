@@ -317,7 +317,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
 
             window.open( href, "myWindow",
 
-            "status = 1, height = 250, width = 500, resizable = no, left = 700" )
+            "status = 1, height = 300, width = 500, resizable = no, left = 700" )
 
         }
 
