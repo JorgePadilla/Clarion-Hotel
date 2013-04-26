@@ -8868,6 +8868,7 @@ ActionView::Template::Error (can't convert Symbol into String):
 Started GET "/reservaciones?locale=es" for 127.0.0.1 at 2013-04-13 19:24:17 -0600
 Processing by ReservacionController#index as HTML
   Parameters: {"locale"=>"es"}
+<<<<<<< HEAD
   Rendered reservacion/index.html.erb within layouts/application (4.5ms)
 Completed 500 Internal Server Error in 6ms
 
@@ -32898,3 +32899,6 @@ ActionController::RoutingError (No route matches [GET] "/images/collapse.png"):
 
 Started GET "/assets/logo.png" for 127.0.0.1 at 2013-04-26 12:22:13 -0600
 Served asset /logo.png - 304 Not Modified (0ms)
+=======
+  Rendered reservacion/index.h
+>>>>>>> ed6b4703b8c3a121ea3f51c9c43105c9572786aa

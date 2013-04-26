@@ -28,7 +28,6 @@
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.jparallax.min.js"></script>
 <script type="text/javascript" src="js/jquery.infieldlabel.min.js"></script>
-<script type="text/javascript" src="js/jquery.twitter.js"></script>
 <script type="text/javascript" src="js/jquery.supersubs.js"></script>
 <script type="text/javascript" src="js/jquery.superfish.js"></script>
 <script type="text/javascript" src="js/functions.js"></script> 
@@ -348,17 +347,26 @@ body {background-image:url(images/pattern/ptn-04.png);}
 				<div class="mainbody">
                   <div class="maincontent">
 		
-	
+	 <% if t('idioma_clarion') == "English" %>
                     <h3> <%=t :restaurante_clarion%></h3>
-<p><img width="290" height="135" id="ex7a" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/restaurante.jpg" onclick= "myPopup2('restaurante')" /></p> 
+<p><img width="290" height="135" id="ex7a" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/restaurante.jpg" onclick= "myPopup2('restaurante?locale=es')" /></p> 
 <br>
-.
+&nbsp;
 <br>
-	 
-
+<%else%>
+                    <h3> <%=t :restaurante_clarion%></h3>
+<p><img width="290" height="135" id="ex7a" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/restaurante.jpg" onclick= "myPopup2('restaurante?locale=en')" /></p> 
+<br>
+&nbsp;
+<br>
+<%end%>	 
+ <% if t('idioma_clarion') == "English" %>
 <h3> <%=t :centro_negocios%></h3>
-<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/centro_de_negocios.jpg" onclick= "myPopup2('negocios')" />  </p>&nbsp;
-
+<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/centro_de_negocios.jpg" onclick= "myPopup2('negocios?locale=en')" />  </p>&nbsp;
+<%else%>
+<h3> <%=t :centro_negocios%></h3>
+<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/centro_de_negocios.jpg" onclick= "myPopup2('negocios?locale=es')" />  </p>&nbsp;
+<%end%>
 
                   </div>
                   <!-- Maincontent end -->
@@ -367,15 +375,28 @@ body {background-image:url(images/pattern/ptn-04.png);}
        	  <div class="grid_13">
        	    <div class="mainbody">
        	      <div class="maincontent">
+                <% if t('idioma_clarion') == "English" %>
        	        <h3> Bar </h3>
-       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/bar.jpg" onclick = "myPopup2('bar')" /></p>&nbsp;
+       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/bar.jpg" onclick = "myPopup2('bar?locale=es')" /></p>&nbsp;
+<%else%>
+                      	        <h3> Bar </h3>
+       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/bar.jpg" onclick = "myPopup2('bar?locale=en')" /></p>&nbsp;
+<% end %>
+               <% if t('idioma_clarion') == "English" %>
        	       <h3> <%=t :eventos_banquetes%></h3>
-       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/eventos.jpg" onclick= "myPopup2('eventos')"/>
+       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/eventos.jpg" onclick= "myPopup2('eventos?locale=es')"/>
+                <br>
+<br>
+                </p>
+<% else %>
+                      	       <h3> <%=t :eventos_banquetes%></h3>
+       	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/eventos.jpg" onclick= "myPopup2('eventos?locale=en')"/>
                 <br>
 <br>
                 </p>
                  
-   	          </div>
+   <% end %>
+	          </div>
        	      <!-- Maincontent end -->
    	        </div>
        	    <!-- Mainbody end -->
@@ -383,10 +404,14 @@ body {background-image:url(images/pattern/ptn-04.png);}
        	  <div class="grid_13">
        	    <div class="mainbody">
        	      <div class="maincontent">
-       	        <h3> Gym / Sauna </h3>
-<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/gimnasio.jpg" onclick= "myPopup2('gym')"/></p>&nbsp;
-
-
+                  <% if t('idioma_clarion') == "English" %>
+       	        <h3> Gimnasio / Sauna </h3>
+<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/gimnasio.jpg" onclick= "myPopup2('gym?locale=es')"/></p>&nbsp;
+<% else %>
+                  <h3> Gym / Sauna </h3>
+<p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/gimnasio.jpg" onclick= "myPopup2('gym?locale=en')"/></p>&nbsp;
+         
+   <% end %>
 
        	        <h3><%=t :condominios_clarion%></h3>
        	        <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/logo.png" onclick= "myPopup3('condominios')" /></p>
