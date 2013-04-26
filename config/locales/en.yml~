@@ -135,7 +135,15 @@ en:
 
   habitacion: 3X2 Room
   
-  habitacion: 3X2 Room
+  otros_servicios: Other Services
+  
+  masaje: Massage
+  
+  transporte: Transport
+  
+  lavanderia: Laundry
+  
+  servicio_de_transporte: Shuttle
 
 
 

@@ -260,9 +260,9 @@ body {background-image:url(images/pattern/ptn-04.png);}
                     <li><%= link_to t('promociones_clarion'), promociones_path %></li>
                     <li><%= link_to t('aboutus_clarion'), aboutus_path %></li>
                 <% if t('idioma_clarion') == "English" %>
-                         <li><%= link_to t('idioma_clarion'), habitaciones_path(:locale => "en") %></li>
+                         <li><%= link_to t('idioma_clarion'), otros_path(:locale => "en") %></li>
                                 <% else %>
-                                   <li><%= link_to t('idioma_clarion'), habitaciones_path(:locale => "es") %></li>  
+                                   <li><%= link_to t('idioma_clarion'), otros_path(:locale => "es") %></li>  
                                        <% end %> 
                     
                 
@@ -339,10 +339,10 @@ margin-left:-100px;
 
 <div class="container">
 <br>
-    <h1 class="flying-text active-text">Masajes</h1>
-    <h1 class="flying-text">Transporte</h1>    
-    <h1 class="flying-text">Lavanderia</h1>
-    <h1 class="flying-text">Servicio de transporte</h1>
+    <h1 class="flying-text active-text"><%=t :masajes%></h1>
+    <h1 class="flying-text"><%=t :transporte%></h1>    
+    <h1 class="flying-text"><%=t :lavanderia%></h1>
+    <h1 class="flying-text"><%=t :servicios_de_transporte%></h1>
 <br>
 </div>
 
