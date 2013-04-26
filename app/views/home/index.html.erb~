@@ -656,7 +656,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
 
 <div class="description-overlay" style="top: 20px; ">
 
-                       	  <h4><%= link_to t('reservaciones_clarion'),reservaciones_path %></h4>
+                       	  <h4><%= link_to t('reservaciones_clarion') %></h4>
 
                
 
@@ -674,7 +674,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
 
                         <div class="description-overlay">
 
-                        	<h4><%= link_to t('instalaciones_clarion'),instalaciones_path %></h4>
+                        	<h4><%= link_to t('instalaciones_clarion') %></h4>
 
                         
 
@@ -743,7 +743,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
 
          
         </td>
-           <td WIDTH=75 align="left"><!-- Facebook Badge START --><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP"  style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Hotel Clarion San Pedro Sula"></a><br/><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" title="Hotel Clarion San Pedro Sula"><img src="/images/facebook_64.png" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" </a><!-- Facebook Badge END -->   </td>
+           <td WIDTH=75><!-- Facebook Badge START --><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP"  style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Hotel Clarion San Pedro Sula"></a><br/><a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" title="Hotel Clarion San Pedro Sula"><img src="/images/facebook_64.png" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" </a><!-- Facebook Badge END -->   </td>
 
         <tr>
 

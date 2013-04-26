@@ -318,21 +318,9 @@ body {background-image:url(images/pattern/ptn-04.png);}
                 <a href="#1"><img src="/images/nivoslides/slide10.jpg" alt="Demo Slide" /></a>
             </div> 
                <div class="slide2">
-<<<<<<< HEAD
-                <a href="#1"><img src="/images/nivoslides/slide11.jpg" alt="Demo Slide" /></a>
-            </div>
-               <div class="slide2">
                 <a href="#1"><img src="/images/nivoslides/slide12.jpg" alt="Demo Slide" /></a>
             </div>
                <div class="slide2">
-                <a href="#1"><img src="/images/nivoslides/slide13.jpg" alt="Demo Slide" /></a>
-            </div>  
-               <div class="slide2">
-=======
-                <a href="#1"><img src="/images/nivoslides/slide12.jpg" alt="Demo Slide" /></a>
-            </div>
-               <div class="slide2">
->>>>>>> 69f3cc38a64cbfcef1ad64ec968c60b4e282ecba
                 <a href="#1"><img src="/images/nivoslides/slide14.jpg" alt="Demo Slide" /></a>
             </div> 
                <div class="slide2">
@@ -347,11 +335,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
   <div class="block">
         <div>
           <h2 class="title"><%=t :nuestras_habitaciones%></h2>
-<<<<<<< HEAD
           <p> <%=t :nuestras_texto%></p>
-=======
-          <p> Todas nuestras comodas,relajantes y lujosas habitaciones han sido decoradas con el mejor gusto para hacer de cada estancia una experiencia inolvidable y así sobrepasar las expectativas de nuestros huéspedes,cuentan con finas amenidades para hacer de su estadia unica, entre ellas: Aire acondicionado, TV de 32' con cable, acceso a internet inalambrico de alta velocidad, escritorio de trabajo, amplios baños con ducha y secadora. El huesped tiene como cortesia el cafe y el agua dentro de la habitacion. El Hotel cuenta con seguridad las 24 horas y camaras de vigilancias en todas sus areas</p>
->>>>>>> 69f3cc38a64cbfcef1ad64ec968c60b4e282ecba
         </div>
  
       </div>
@@ -359,11 +343,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
         <div class="mainbody">
           <div class="maincontent">
             <h3><%=t :confort_clarion%></h3>
-<<<<<<< HEAD
             <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/conf.jpg" /> <%=t :confort_texto%><br></p>
-=======
-            <p><img width="290" height="135" class="shadow" style="margin-left: 0px; float: left" alt=".shadow css class" src="images/conf.jpg" /> Le ofrecemos muchos servicios y comodidades para que se sienta como en casa, y pueda mantenerse en contacto con sus amigos y su familia.<br></p>
->>>>>>> 69f3cc38a64cbfcef1ad64ec968c60b4e282ecba
           </div>
           <!-- Maincontent end -->
         </div>
@@ -388,15 +368,11 @@ body {background-image:url(images/pattern/ptn-04.png);}
         <div class="mainbody">
           <div class="maincontent">
             <h3><%=t :reservaciones_clarion%></h3>
-<<<<<<< HEAD
-            <p><a href="otros.html"><img src="/images/reservaciones290.jpg" alt=".shadow css class" width="290" height="135" border="0" class="shadow" style="margin-left: 0px; float: left" /></a><br>
-=======
-            <p><a href="otros.html"><img src="/images/reservaciones290.jpg" alt=".shadow css class" width="290" height="135" border="0" class="shadow" style="margin-left: 0px; float: left" /></a>Dirección: Avenida Circunvalación 2 Calle, S.O. Bo. Rio de piedras. San Pedro Sula, Cortés, Honduras<br>
->>>>>>> 69f3cc38a64cbfcef1ad64ec968c60b4e282ecba
+            <p><a href="otros.html"><img src="/images/reservaciones290.jpg" alt=".shadow css class" width="290" height="135" border="0" class="shadow" style="margin-left: 0px; float: left" /></a><%=t :reservaciones_texto%><br>
               PBX :  (504) 255-36070 <br>
               PBX:   (504) 255-36071 <br>
               Fax:   (504) 255-24570 <br>
-              Email: recepcion@hotelclarionsps.com </p>
+              Email: reservaciones@hotelclarionsps.com </p>
           </div>
           <!-- Maincontent end -->
         </div>
@@ -406,17 +382,21 @@ body {background-image:url(images/pattern/ptn-04.png);}
       </div>
     </div>
     <!-- Container End -->
-  <div id="bottom">
-      <!-- Container 12 End -->
-      <div id="footer2" class="container_12">
-        <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
-          <tr>
-            <td> © Copyright 2012 Hotel Clarion  Diseño: Jorge Padilla y Francisco Calix </td>
-            <td class="partner_hotels"><a href="hoteles_asociados.html">Hotel Clarion</a></td>
-          </tr>
-        </table>
-      </div>
+    .
+ <div id="bottom">
+
+    <!-- Container 12 End -->
+    <div id="footer2" class="container_12" >
+      <table  width="100%">
+	  <td>
+	      <a>Sitio web diseñado por TAPHN © Copyright 2013</a>
+	  </td>
+	  <td align="right">
+	      <a href="http://www.facebook.com/pages/Clarion-San-Pedro-Sula/204168159620073" target="_TOP" title="Hotel Clarion San Pedro Sula"><img src="/images/facebook_64.png" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" </a> <!-- Facebook Badge END -->  
+	  </td>  
+       </table> 
     </div>
+   </div>
 <!-- Bottom End --></div><!-- Wrapper end -->
 
 <script type="text/javascript">$('#noscript').remove();</script>
