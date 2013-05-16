@@ -8,18 +8,26 @@
 <title>Clarion Hotel, San Pedro Sula</title> 
   
 <!-- CSS Start //--> 
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="images/favicon.png" /> 
 <link href="style.css" rel="stylesheet" type="text/css" /> 
 <link href="css/colorbox.css" rel="stylesheet" type="text/css" /> 
 <link href="css/nivo-slider.css" rel="stylesheet" />
 <link href="css/superfish.css" rel="stylesheet" />
 <link href="css/google_font.css" rel="stylesheet" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+
+
+
+
 <!-- fallback if js not enabled //-->
 <link href="css/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" /> 
 <!-- CSS End //-->
 
 <!-- JS Start //--> 
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
 <script type="text/javascript" src="js/jquery.livequery.min.js"></script>
 <script type="text/javascript" src="js/jquery.detectbrowser.js"></script> 
 <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
@@ -29,11 +37,76 @@
 <script type="text/javascript" src="js/jquery.supersubs.js"></script>
 <script type="text/javascript" src="js/jquery.superfish.js"></script>
 <script type="text/javascript" src="js/functions.js"></script> 
+<script type="text/javascript" src="js/maps.js"></script> 
 <!-- JS End //--> 
 <script type="text/javascript">
 $(window).load(function() {
 	$('#slider').nivoSlider();
 });
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				m4v: "/clarion.m4v",
+				ogv: "/clarion.ogv",
+				webmv: "/clarion.webm",
+				poster: "/images/galeria/conf.jpg"
+				
+			});
+		},
+		play: function() { // To avoid multiple jPlayers playing together.
+			$(this).jPlayer("pauseOthers");
+		},
+		swfPath: "clarion.swf",
+		solution: "html, flash",
+		supplied: "webmv, ogv, m4v, swf",
+		smoothPlayBar: true,
+		keyEnabled: true
+		
+		//errorAlerts:"true"
+	});
+
+	
+});
+//]]>
+</script>
+
+<script type="text/javascript">
+			function initialize() {
+				var latlng = new google.maps.LatLng(15.505782, -88.037830);
+				var settings = {
+					zoom: 16,
+					center: latlng,
+					mapTypeControl: true,
+					mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+					navigationControl: true,
+					navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+					mapTypeId: google.maps.MapTypeId.ROADMAP};
+				var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+                                  var companyPos = new google.maps.LatLng(15.505782, -88.037830);
+                                  var companyLogo = new google.maps.MarkerImage('/logo3.png',
+	new google.maps.Size(150,150),
+	new google.maps.Point(0,0),
+	new google.maps.Point(50,50)
+);
+
+var companyMarker = new google.maps.Marker({
+	position: companyPos,
+	map: map,
+	icon: companyLogo,
+	title:"Hotel Clarion San Pedro Sula"
+});
+
+ 
+
+	               };
+
 </script>
 <!-- DEMO PANEL Files Start -->
 <link href="demo/demo.css" rel="stylesheet" />
@@ -42,7 +115,10 @@ $(window).load(function() {
 <style id="colors" type="text/css"></style>
 <style id="font_styles" type="text/css"></style>
 <style id="pattern" type="text/css">
-body {background-image:url(images/pattern/ptn-04.png);}
+
+
+
+ {background-image:url(images/pattern/ptn-04.png);}
 .partner_hotels {font-family: Verdana, Geneva, sans-serif;
 	font-size: 14px;
 	font-weight: bold;
@@ -53,7 +129,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
 <!-- DEMO PANEL Fiels End -->
 </head>
 
-<body class="homepage">
+<body onload="initialize()">
 
 <!-- DEMO PANEL Start -->
 <div id="demopanel">
@@ -210,7 +286,7 @@ body {background-image:url(images/pattern/ptn-04.png);}
             <option value='Raleway:100' />Raleway
             <option value='Reenie+Beanie' />Reenie Beanie
             <option value='Rock+Salt' />Rock Salt
-            <option value='Schoolbell' />Schoolbell
+            <option value='Schoolbell' />Schoolbellody
 
             <option value='Slackey' />Slackey
             <option value='Sniglet:800' />Sniglet
@@ -315,22 +391,96 @@ body {background-image:url(images/pattern/ptn-04.png);}
      
      
      
-     
-     
-	
+
      
 	    <h3><%=t :nuestra_ubicacion%></h3>
-            <iframe width="480" height="750" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.hn/maps?f=d&amp;source=s_d&amp;saddr=Hotel+Clarion,+2+Calle+SO,+San+Pedro+Sula,+Cort%C3%A9s&amp;daddr=&amp;geocode=FXqZ7AAdNKbA-iEC0j5FSJhy6ik5zawQb1tmjzEC0j5FSJhy6g&amp;aq=0&amp;oq=Hotel+Clarion,+2+Calle+SO,+San+Pedro+Sula&amp;sll=15.505786,-88.037836&amp;sspn=0.012034,0.019741&amp;hl=en&amp;mra=prev&amp;ie=UTF8&amp;t=m&amp;ll=15.505709,-88.037889&amp;spn=0.003618,0.00456&amp;z=17&amp;output=embed"></iframe><br />
-      
+ 
+            <div id="map_canvas" style="width:480px; height:340px"></div>
+       
 
-</div>
+
+ <div class="grid_6">
+  </br>
+  
+   <h3>Video</h3>
+  
+<div id="jp_container_1" class="jp-video jp-video-270p">
+			<div class="jp-type-single">
+				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+				<div class="jp-gui">
+					<div class="jp-video-play">
+						<a href="javascript:;" class="jp-video-play-icon" tabindex="1">play</a>
+					</div>
+					<div class="jp-interface">
+						<div class="jp-progress">
+							<div class="jp-seek-bar">
+								<div class="jp-play-bar"></div>
+							</div>
+						</div>
+						<div class="jp-current-time"></div>
+						<div class="jp-duration"></div>
+						<div class="jp-title">
+							<ul>
+								<li>Hotel Clarion</li>
+							</ul>
+						</div>
+						<div class="jp-controls-holder">
+							<ul class="jp-controls">
+							<br>
+								<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+								<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+								<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+								<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+								<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+								<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+							</ul>
+							<div class="jp-volume-bar">
+								<div class="jp-volume-bar-value"></div>
+							</div>
+
+							<ul class="jp-toggles">
+								<li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a></li>
+								<li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen">restore screen</a></li>
+								<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+								<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>
+		
+		</div>
+            
+            
+            
+            
+      </div>  
+ 
+	 
+	  
 
     </div><!-- Block End --><!-- Block End -->
 
-        
+      
+	    
+	   
+
+
 
   </div><!-- Container End -->
 
+  
+  
+
+   </div>
+  <br>
+  
+  
   <div id="bottom">
   
    <div id="footer2" class="container_12" >
@@ -352,3 +502,4 @@ body {background-image:url(images/pattern/ptn-04.png);}
 <!-- Bottom End --></div><!-- Wrapper end -->
 
 <script type="text/javascript">$('#noscript').remove();</script>
+</body>

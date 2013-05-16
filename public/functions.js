@@ -69,15 +69,5 @@ $(window).load(function() {
 	}); // end each faqs
 	
 	
-	//twitter
-	$("#twitter").getTwitter({
-		// change here the Twitter username
-		userName: "envato",
-		numTweets: 2,
-		loaderText: "Loading tweets...",
-		slideIn: false,
-		showHeading: true,
-		headingText: "Latest Tweets",
-		showProfileLink: true
-	});
+	
 })

@@ -13,7 +13,7 @@ es:
 
   nuestras_habitaciones: Nuestras Habitaciones
   
-  nuestras_texto: Todas nuestras comodas,relajantes y lujosas habitaciones han sido decoradas con el mejor gusto para hacer de cada estancia una experiencia inolvidable y así sobrepasar las expectativas de nuestros huéspedes,cuentan con finas amenidades para hacer de su estadia unica, entre ellas, Aire acondicionado, TV de 32 con cable, acceso a internet inalambrico de alta velocidad, escritorio de trabajo, amplios baños con ducha y secadora. El huesped tiene como cortesia el cafe y el agua dentro de la habitacion. El Hotel cuenta con seguridad las 24 horas y camaras de vigilancias en todas sus areas.
+  nuestras_texto: Todas nuestras ccmodas,relajantes y lujosas habitaciones han sido decoradas con el mejor gusto para hacer de cada estancia una experiencia inolvidable y así sobrepasar las expectativas de nuestros huéspedes,cuentan con finas amenidades para hacer de su estadía única, entre ellas, Aire acondicionado, TV de 32 con cable, acceso a Internet inalámbrico de alta velocidad, escritorio de trabajo, amplios baños con ducha y secadora. El huésped tiene como cortesía el café y el agua dentro de la habitación. El Hotel cuenta con seguridad las 24 horas y cámaras de vigilancias en todas sus áreas.
   
   todas_habitaciones: Todas nuestras habitaciones cuentan con
 
@@ -25,7 +25,7 @@ es:
 
 
 
-  fina_decoracion: Fina Decoracion
+  fina_decoracion: Fina Decoración
 
   reservaciones_clarion: Reservaciones
   
@@ -41,13 +41,13 @@ es:
 
   restaurante_clarion: Restaurante
 
-  area_juego: Area de Juegos
+  area_juego: Área de Juegos
 
   centro_negocios: Centro de Negocios
 
   eventos_banquetes: Eventos y Banquetes
 
-  bar_clarion: Bar El capitan
+  bar_clarion: Bar El Capitán
 
   condominios_clarion: Condominios
 
@@ -69,7 +69,7 @@ es:
 
   texto_garantia_cuatro: Para cualquier consulta o información adicional, por favor contáctenos a través de nuestros teléfonos o e-mail y con mucho gusto le atenderemos de inmediato.
 
-  direccion_clarion: Direccion
+  direccion_clarion: Dirección
 
   nombre_clarion: Nombre
 
@@ -85,7 +85,7 @@ es:
 
   compania_clarion: Compañia
 
-  telefono_clarion: Telefono
+  telefono_clarion: Teléfono
 
   promociones_clarion: Promociones
 
@@ -95,7 +95,7 @@ es:
   
   parrafo1: Creemos en la calidad de nuestros servicios y atención como nuestra mayor garantía y fuente de satisfacción hacia usted, por eso deseamos que se sienta con la mayor confianza hacia nosotros y tenga la seguridad de que ha hecho una buena y segura elección. Seguimos trabajando para ofrecerle el mejor hospedaje de San Pedro Sula.
   
-  parrafo2: Estamos situados en la bella ciudad de San Pedro Sula, la capital industrial de Honduras, a tan solo 20 minutos del aeropuerto internacional Ramon Villeda Morales. Este hotel esta ubicado en la avenida circunvalaci[on a 5 minutos del centro, donde esta localizada la catedral y el parque central, Hotel Clarion San Pedro Sula está rodeada por áreas comerciales y financieras, es el lugar ideal para reuniones de trabajo y viajes de placer. 
+  parrafo2: Estamos situados en la bella ciudad de San Pedro Sula, la capital industrial de Honduras, a tan solo 20 minutos del aeropuerto internacional Ramon Villeda Morales. Este hotel esta ubicado en la avenida circunvalación a 5 minutos del centro, donde esta localizada la catedral y el parque central, Hotel Clarion San Pedro Sula está rodeada por áreas comerciales y financieras, es el lugar ideal para reuniones de trabajo y viajes de placer. 
   
   parrafo3: San Pedro Sula le ofrece fácil acceso a las ciudades y sitios más visitados por los turistas como ser, Copán Ruinas, Tela, Ceiba, Islas de la Bahía, Utila y muchos más.
   
@@ -135,7 +135,7 @@ es:
   
   restaurante_pergaminos: Restaurante Pergaminos
   
-  restaurante_texto: El restaurante del hotel "Pergaminos" ofrece un ambiente relajado y exclusivo con deliciosos platillos nacionales e internacionales preparados siempre con los ingredientes más frescos. El servicio de habitación está disponible de 6:00 am a 11:00 pm con platillos fríos y calientes, proporcionándoles una experiencia culinaria en la comodidad de su habitación.
+  restaurante_texto: El restaurante del hotel "Pergaminos" ofrece un ambiente relajado y exclusivo con deliciosos platillos nacionales e internacionales preparados siempre con los ingredientes más frescos. El servicio del restaurante está disponible de 6:00 am a 11:00 pm con platillos fríos y calientes, proporcionándoles una experiencia culinaria en la comodidad de su habitación.
 
   horario: Horario Restaurante
   
@@ -153,13 +153,15 @@ es:
   
   centro_de_negocio: Centro de Negocios
   
-  centro_texto: A los viajeros de negocios les ofrecemos comodidades adicionales como acceso al fax,fotocopiadora,impresiones y escaneados en nuestro centro de negocios con ordenador a acceso a internet de alta velocidad.
+  centro_de_texto: A los viajeros de negocios les ofrecemos comodidades adicionales como acceso al fax,fotocopiadora,impresiones y escaneados en nuestro centro de negocios con ordenador a acceso a internet de alta velocidad.
   
-  eventos_texto: Hotel Clarión San Pedro Sula cuenta con modernos y amplios salones con capacidad para 200 personas,equipados con sistemas de luces graduales y tecnologia de punta en audiovisuales. Estamos comprometidos a asegurar que su evento sea único y se lleven a sus invitados una experiencia inolvidable.
+  eventos_texto: Hotel Clarión San Pedro Sula cuenta con modernos y amplios salones con capacidad para 150 personas,equipados con sistemas de luces graduales y tecnologia de punta en audiovisuales. Estamos comprometidos a asegurar que su evento sea único y se lleven a sus invitados una experiencia inolvidable.
   
   contacto: Contacto
   
   correo: Correo
+  
+  condominio_texto: Disfrute de largas estadias en nuestras comodos y amplios condominios. Todos estan equipados con sala,comedor,cocina,refrigeradora,camas queen,internet de alta velocidad,Tv's Plasma y amplios baños.
   
   date:
     abbr_day_names:

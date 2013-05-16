@@ -43,7 +43,7 @@ a:hover{ color:#555555; }
 a img, img { border:none}
 
 /* paragraphs,blockquote,code */
-p { margin-bottom:15px; }
+p { margin-bottom:15px; text-align: justify; text-justify: newspaper; font-size:1.20em}
 blockquote { margin: 0 0 15px 0; color: #8a8a8a; font-style: italic; font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.4em; font-size: 14px; }
 blockquote p { line-height: 1.4em; font-size: 14px; }
 code { background: #fafafa; padding: 5px 10px; display: block; font-size: 12px; color: #858585; margin-bottom: 10px; border: 1px dotted #eaeaea; clear: both; }
@@ -173,6 +173,7 @@ input[type=submit]:hover {opacity:1; filter:alpha(opacity=100);}
 	padding-right: 3px;
 	padding-bottom: 40px;
 	padding-left: 3px;
+	
 }
 #header ul.menu:hover li > a { text-shadow: 0 0 2px rgba(0,0,0,0.2) !important;}
 #header ul.menu li.sfHover a.sf-with-ul {color: #555; color: rgba(0,0,0, 1.0); text-shadow: none !important;}
