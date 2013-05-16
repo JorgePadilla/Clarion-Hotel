@@ -8869,6 +8869,7 @@ Started GET "/reservaciones?locale=es" for 127.0.0.1 at 2013-04-13 19:24:17 -060
 Processing by ReservacionController#index as HTML
   Parameters: {"locale"=>"es"}
 <<<<<<< HEAD
+<<<<<<< HEAD
   Rendered reservacion/index.html.erb within layouts/application (4.5ms)
 Completed 500 Internal Server Error in 6ms
 
@@ -43533,3 +43534,6 @@ ActionController::RoutingError (No route matches [GET] "/public"):
 
 
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+=======
+  Rendered reservacion/index.h
+>>>>>>> a038423b4d70c33f816c56f8e41c70472348f790
